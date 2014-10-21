@@ -32,7 +32,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
             <article <?php post_class(); ?>>
 				
 				<header>
-			    	<h1><?php the_title(); ?></h1>
+			    	<h1><?php //the_title(); ?></h1>
 				</header>
 				
                 <section class="entry">
