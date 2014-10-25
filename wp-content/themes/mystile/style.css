@@ -100,6 +100,15 @@ INDEX:
     font-family:'VNI Aptima';
     src:url('fonts/VNI-Aptima.ttf') format('truetype');
 }
+@font-face {
+    font-family:'BLAIR ITC LIGHT';
+    src:url('fonts/BLAIR_ITC_LIGHT.ttf') format('truetype');    
+}
+
+@font-face {
+    font-family:'BLAIR ITC BOLD';
+    src:url('fonts/BLAIR_ITC_BOLD.ttf') format('truetype');
+}
 html,
 body,
 div,
@@ -593,7 +602,7 @@ ul.nav li a {
 }
 /* 2.3 Header */
 #header {
-  padding: 1.618em 0 0;
+  padding: 0;
   margin-bottom: 30px;
   border-bottom: 10px solid #000;
   clear: both;
@@ -3172,7 +3181,7 @@ img.ui-datepicker-trigger {
 .ie8 #top select {
   display: none !important;
 }
-#navigation a,#menu-footer-menu a{
-    font-family: 'VNI Aptima' !important;
+#navigation a,#menu-footer-menu a{menu-item
+    font-family: 'BLAIR ITC LIGHT' !important;
     text-transform: uppercase;
 }
