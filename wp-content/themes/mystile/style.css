@@ -86,6 +86,20 @@ INDEX:
 /*-------------------------------------------------------------------------------------------*/
 /* RESET - http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 */
 /*-------------------------------------------------------------------------------------------*/
+/*@font-face {
+    font-family:VNI-Aptima;
+    src:url('fonts/VNI-Aptima.ttf') format('truetype');
+}
+*/
+@font-face {
+    font-family:'New Acamedy';
+    src:url('fonts/NEW-ACADEMY.ttf') format('truetype');    
+}
+
+@font-face {
+    font-family:'VNI Aptima';
+    src:url('fonts/VNI-Aptima.ttf') format('truetype');
+}
 html,
 body,
 div,
@@ -593,6 +607,7 @@ ul.nav li a {
 #header .site-description {
   display: none;
   margin-bottom: 0;
+  font-family: 'New Acamedy';
 }
 #header .site-title a,
 #header .site-description a {
@@ -3156,4 +3171,8 @@ img.ui-datepicker-trigger {
 }
 .ie8 #top select {
   display: none !important;
+}
+#navigation a,#menu-footer-menu a{
+    font-family: 'VNI Aptima' !important;
+    text-transform: uppercase;
 }
