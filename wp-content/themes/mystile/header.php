@@ -40,17 +40,15 @@ global $woo_options, $woocommerce;
 
 	<div id="top">
 		<nav class="col-full" role="navigation">
-                        <?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-menu-left' ) ) { ?>
-			<?php wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'top-nav-left', 'menu_class' => 'nav fl', 'theme_location' => 'top-menu-left' ) ); ?>
+                        <?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-left-menu' ) ) { ?>                    
+			<?php wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'top-nav-left', 'menu_class' => 'nav menu-left', 'theme_location' => 'top-left-menu' ) ); ?>
 			<?php } ?>
                     
-                        <?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-menu-right' ) ) { ?>
-			<?php wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'top-nav-right', 'menu_class' => 'nav fl', 'theme_location' => 'top-menu-right' ) ); ?>
-			<?php } ?>
-                    
-			<?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-menu' ) ) { ?>
+                        <?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-menu' ) ) { ?>
 			<?php wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'top-nav', 'menu_class' => 'nav fl', 'theme_location' => 'top-menu' ) ); ?>
-			<?php } ?>
+			<?php } ?>                    
+                        <div id="header-status">Free local shipping & free 14-days return</div>
+			
                     
 			<?php
 				if ( class_exists( 'woocommerce' ) ) {
@@ -61,7 +59,14 @@ global $woo_options, $woocommerce;
 					echo '</ul>';
 				}
 			?>
+                    
+                        <?php if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'top-right-menu' ) ) { ?>
+			<?php wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'top-nav-right', 'menu_class' => 'nav menu-right', 'theme_location' => 'top-right-menu' ) ); ?>
+			<?php } ?>
+                        
+                        
 		</nav>
+                <?php get_search_form( true ); ?>
 	</div><!-- /#top -->
 
 

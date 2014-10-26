@@ -116,13 +116,13 @@ INDEX
     }
     #top ul.nav {
         font-size: .857em;
-        float:left;
-        width:20%;
         /* LEVEL 2 */
         /* LEVEL 3 */
     }
     #top ul.nav > li a {
-        padding: 1.387em 1em;
+        padding: 0 10px;
+        margin:0;
+        line-height: 40px;
         color: #9f9693;
     }
     #top ul.nav > li a:hover {
@@ -140,7 +140,7 @@ INDEX
         padding: .53em 1em;
     }
     #top .wc-nav {
-        
+        float:right;        
     }
     #top .wc-nav li.checkout {
         display: inline-block;
@@ -177,7 +177,7 @@ INDEX
     }
     #top .wc-nav li.cart a {
         line-height: 40px;
-        padding: 0;
+        padding:0 10px;
     }
     #top .wc-nav li.cart a .contents {
         padding: .2em .618em;
@@ -195,8 +195,7 @@ INDEX
         display: block !important;
         margin-top: .382em;
     }
-    #header #navigation ul.nav {
-        float: right;
+    #header #navigation ul.nav {        
         /* LEVEL 2 */
         /* LEVEL 3 */
     }
@@ -652,6 +651,9 @@ INDEX
     }
     .layout-right-content #sidebar {
         float: left;
+        max-width: 250px;
+        padding:30px 50px 30px 20px;
+        background:#f3f3f4;
     }
     .layout-full #main {
         width: 100%;
@@ -1001,6 +1003,10 @@ INDEX
     display:inline;    
     
 }
+#menu-footer-menu li a{
+    color: #272625;
+    font-size: 10px;
+}
 #menu-footer-menu li:before{
     padding-left:10px;
     content:"|";
@@ -1010,4 +1016,59 @@ INDEX
 }
 #navigation li:before{
     content:"/" !important;
+}
+
+
+#top-nav-left li{
+    border-right:1px solid silver;
+}
+#top-nav-left li:first-child{
+    border-left:1px solid silver;
+}
+
+#top nav ul#top-nav-right,#top nav ul#top-nav-left{
+    float:right;
+    width: auto;
+    text-transform: uppercase;
+    font-family: 'BLAIR ITC LIGHT';
+    font-size: 9px;
+}
+#top nav ul#top-nav-left{
+    float:left;
+}
+.search {
+    width:100%;
+    
+    
+}
+.search form{
+    margin:0;
+    float:right;
+    padding-top:5px;
+}
+.search form input[type=submit]{
+    display:none;
+}
+.search form input[type=search]{
+    text-align:center;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    
+}
+div#header-status{
+    float: left;
+    text-align: center;
+    width: 50%;
+    color: red;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'BLAIR ITC LIGHT';
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+    #top nav ul#top-nav-right,#top nav ul#top-nav-left{
+        display:none;
+    }
 }
