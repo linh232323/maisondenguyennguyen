@@ -123,7 +123,9 @@ INDEX
         padding: 0 10px;
         margin:0;
         line-height: 40px;
-        color: #9f9693;
+        color: #5c5c5c;
+        font-size: 11px;
+        font-family: "Lucida Console";
     }
     #top ul.nav > li a:hover {
         background: #f7f7f7;
@@ -937,7 +939,7 @@ INDEX
     /* 6. FOOTER WIDGETS */
     #footer-widgets {
         border-top: 0;
-        padding: 10px 0;
+        padding: 30px 0;
     }
     #footer-widgets .block {
         margin-right: 3.8%;
@@ -1028,6 +1030,7 @@ INDEX
 
 #top nav ul#top-nav-right,#top nav ul#top-nav-left{
     float:right;
+    width:25%;
     width: auto;
     text-transform: uppercase;
     font-family: 'BLAIR ITC LIGHT';
@@ -1035,6 +1038,18 @@ INDEX
 }
 #top nav ul#top-nav-left{
     float:left;
+    
+}
+
+ul#top-nav-left a{
+    justify-content: center;
+    align-items: center;
+    max-width: 80px;
+    width:auto;
+    height: 40px;
+    display: flex;
+    line-height: normal !important;
+    text-align: center;
 }
 .search {
     width:100%;
@@ -1044,7 +1059,7 @@ INDEX
 .search form{
     margin:0;
     float:right;
-    padding-top:5px;
+    padding-top:19px;
 }
 .search form input[type=submit]{
     display:none;
@@ -1060,15 +1075,43 @@ div#header-status{
     float: left;
     text-align: center;
     width: 50%;
-    color: red;
+    color: #ee4e00;
     line-height: 40px;
     text-transform: uppercase;
-    font-family: 'BLAIR ITC LIGHT';
-    font-weight: 800;
+    font-family: 'Book Antiqua';    
+    font-size: 16px;
 }
-
+div#credit {
+    font-size: 13px;
+}
+.wp-video {
+    max-width: 100%;
+    height: auto;
+    float:left;
+}
+.throughout {
+    width: 40%;
+    height: 19px;
+    float: left;
+    border-bottom: 2px solid silver;
+    margin-bottom: 30px;
+}
+.tw {
+    float: left;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Georgia';
+    line-height: normal;
+}
+article header{
+    text-align: center;
+    text-transform: uppercase;
+}
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
         display:none;
     }
+    
 }

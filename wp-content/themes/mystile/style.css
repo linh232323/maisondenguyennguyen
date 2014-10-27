@@ -109,6 +109,12 @@ INDEX:
     font-family:'BLAIR ITC BOLD';
     src:url('fonts/BLAIR_ITC_BOLD.ttf') format('truetype');
 }
+
+@font-face {
+    font-family:'BLAIR ITC MEDIUM';
+    src:url('fonts/Blair_ITC_Medium.ttf') format('truetype');
+    
+}
 html,
 body,
 div,
@@ -416,7 +422,7 @@ table,
 form,
 pre,
 hr {
-    margin: 0 0 1.618em 0;
+
 }
 li > ul,
 li > ol {
@@ -575,15 +581,19 @@ ul.nav li a {
     padding-top: .25em;
     padding-left: 0;
 }
-#top .wc-nav li.cart a:before {
-    font-family: 'WebSymbolsRegular';
+#top .wc-nav li.cart a:after {    
     display: inline-block;
     font-size: .857em;
-    margin-right: .618em;
+    margin-left: .618em;
     font-family: "icomoon";
     font-size: 1em;
     content: "£";
     font-weight: normal;
+    background: url(./images/bag.png) no-repeat;
+    width: 25px;
+    height: 40px;
+    text-indent: 999px;
+    background-position-y: 4px;
 }
 #top .wc-nav li.cart a .contents {
     display: none;
@@ -617,6 +627,7 @@ ul.nav li a {
     display: none;
     margin-bottom: 0;
     font-family: 'New Acamedy';
+    font-size:40px;
 }
 #header .site-title a,
 #header .site-description a {
@@ -705,7 +716,7 @@ ul.nav li a {
     border-top: 0;
 }
 #footer {
-    padding: 2.618em 0;
+    padding: 60px 0;
     color: #877c78;
 }
 #footer #credit img {
@@ -3180,11 +3191,18 @@ img.ui-datepicker-trigger {
 .ie8 #top select {
     display: none !important;
 }
-#navigation a,#menu-footer-menu a{
-    font-family: 'BLAIR ITC BOLD' !important;
+.mega-menu-wrap a{
+    font-family: 'BLAIR ITC MEDIUM' !important;
     text-transform: uppercase;
-    font-size:9px !important;
+    font-size:12px !important;
     color:#3f3f3f !important;
+}
+#menu-footer-menu a{
+    font-family: 'Aparajita' !important;
+    color:#3f3f3f !important;
+    text-transform: uppercase;
+    font-size:16px !important;
+    color:#58595b;
 }
 
 li.cat-item.current-cat.cat-parent.parent:before {
