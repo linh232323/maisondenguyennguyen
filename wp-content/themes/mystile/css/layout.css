@@ -98,10 +98,18 @@ INDEX
         display: block;
     }
     /* 2. TOP NAVIGATION (Add top navigation presentational styles here) */
-    #top {
-        background: #f7f7f7;
+    #top {        
         margin: 0 -3.631em;
         padding: 0 3.631em;
+        height: 40px;
+        background: #eae8e5;
+    }
+    #top head-line{
+        color:#f00;
+        line-height: 40px;
+        text-align:center;
+        width:60%;
+        float:left;
     }
     #top #top-nav {
         display: block;
@@ -112,8 +120,12 @@ INDEX
         /* LEVEL 3 */
     }
     #top ul.nav > li a {
-        padding: 1.387em 1em;
-        color: #9f9693;
+        padding: 0 10px;
+        margin:0;
+        line-height: 40px;
+        color: #5c5c5c;
+        font-size: 11px;
+        font-family: "Lucida Console";
     }
     #top ul.nav > li a:hover {
         background: #f7f7f7;
@@ -130,8 +142,7 @@ INDEX
         padding: .53em 1em;
     }
     #top .wc-nav {
-        width: auto;
-        float: right;
+        float:right;        
     }
     #top .wc-nav li.checkout {
         display: inline-block;
@@ -167,8 +178,8 @@ INDEX
         text-align: right;
     }
     #top .wc-nav li.cart a {
-        padding-top: 1.387em;
-        padding-left: 1em;
+        line-height: 40px;
+        padding:0 10px;
     }
     #top .wc-nav li.cart a .contents {
         padding: .2em .618em;
@@ -186,8 +197,7 @@ INDEX
         display: block !important;
         margin-top: .382em;
     }
-    #header #navigation ul.nav {
-        float: right;
+    #header #navigation ul.nav {        
         /* LEVEL 2 */
         /* LEVEL 3 */
     }
@@ -603,6 +613,12 @@ INDEX
         left:-50%;
         margin:0;
     }
+   
+    .mega-menu-item::before {
+        padding-left:10px;
+        content:"|";
+    }
+   
     #main.fullwidth,
     .layout-full #main,
     .col-full,
@@ -637,6 +653,9 @@ INDEX
     }
     .layout-right-content #sidebar {
         float: left;
+        max-width: 250px;
+        padding:30px 50px 30px 20px;
+        background:#f3f3f4;
     }
     .layout-full #main {
         width: 100%;
@@ -920,7 +939,7 @@ INDEX
     /* 6. FOOTER WIDGETS */
     #footer-widgets {
         border-top: 0;
-        padding: 10px 0;
+        padding: 30px 0;
     }
     #footer-widgets .block {
         margin-right: 3.8%;
@@ -986,10 +1005,113 @@ INDEX
     display:inline;    
     
 }
+#menu-footer-menu li a{
+    color: #272625;
+    font-size: 10px;
+}
 #menu-footer-menu li:before{
     padding-left:10px;
     content:"|";
 }
-#menu-footer-menu:first-child{
+#menu-footer-menu li:first-child:before{
     content:none;
+}
+#navigation li:before{
+    content:"/" !important;
+}
+
+
+#top-nav-left li{
+    border-right:1px solid silver;
+}
+#top-nav-left li:first-child{
+    border-left:1px solid silver;
+}
+
+#top nav ul#top-nav-right,#top nav ul#top-nav-left{
+    float:right;
+    width:25%;
+    width: auto;
+    text-transform: uppercase;
+    font-family: 'BLAIR ITC LIGHT';
+    font-size: 9px;
+}
+#top nav ul#top-nav-left{
+    float:left;
+    
+}
+
+ul#top-nav-left a{
+    justify-content: center;
+    align-items: center;
+    max-width: 80px;
+    width:auto;
+    height: 40px;
+    display: flex;
+    line-height: normal !important;
+    text-align: center;
+}
+.search {
+    width:100%;
+    
+    
+}
+.search form{
+    margin:0;
+    float:right;
+    padding-top:19px;
+}
+.search form input[type=submit]{
+    display:none;
+}
+.search form input[type=search]{
+    text-align:center;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    
+}
+div#header-status{
+    float: left;
+    text-align: center;
+    width: 50%;
+    color: #ee4e00;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Book Antiqua';    
+    font-size: 16px;
+}
+div#credit {
+    font-size: 13px;
+}
+.wp-video {
+    max-width: 100%;
+    height: auto;
+    float:left;
+}
+.throughout {
+    width: 40%;
+    height: 19px;
+    float: left;
+    border-bottom: 2px solid silver;
+    margin-bottom: 30px;
+}
+.tw {
+    float: left;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Georgia';
+    line-height: normal;
+}
+article header{
+    text-align: center;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+    #top nav ul#top-nav-right,#top nav ul#top-nav-left{
+        display:none;
+    }
+    
 }
