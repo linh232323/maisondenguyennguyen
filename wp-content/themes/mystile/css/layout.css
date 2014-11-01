@@ -625,7 +625,7 @@ INDEX
         width: 100%;
     }
     #main {
-        width: 69.2%;
+        width: 75%;
     }
     #sidebar {
         margin-top: 0;
@@ -648,11 +648,19 @@ INDEX
     .layout-right-content #main {
         float: right;
     }
+    .layout-right-content #main .page-title{
+        font-family: "Georgia";
+        font-size:24px;
+        text-align:center;
+    }
     .layout-right-content #sidebar {
         float: left;
-        max-width: 250px;
-        padding:30px 50px 30px 20px;
-        background:#f3f3f4;
+        width:25%;        
+    }
+    .layout-right-content #sidebar .primary{
+        padding: 30px;
+        background: #f3f3f4;
+        margin: 0 30px 30px 0px;
     }
     .layout-full #main {
         width: 100%;
@@ -678,7 +686,7 @@ INDEX
         margin: 0;
     }
     .footer-wrap {
-        background: #f7f7f7;
+        background: #eae8e5;
         margin: 0 -3.631em;
         padding: 0 3.631em;
     }
@@ -689,7 +697,6 @@ INDEX
     /* 7.2 Products */
     ul.products li.product {
         position: relative;
-        width: 22.05%;
     }
     ul.products li.product:nth-child(2n) {
         margin-right: 3.8%;
@@ -1123,7 +1130,7 @@ a.cart-parent:before {
     content: "Shopping Bag";
     text-transform: uppercase;
     font-family: "Book Antiqua";
-    font-size:15px;
+    font-size:12px;
     color:#3c3c3c;
 }
 a.cart-parent span {
@@ -1137,7 +1144,7 @@ ul#top-nav-left li a {
 }
 ul#top-nav-right li a {
     font-family: "Book Antiqua";
-    font-size: 15px;
+    font-size: 13px;
     color: #3c3c3c;
 }
 .ms-thumb-frame, .ms-thumb-frame img{

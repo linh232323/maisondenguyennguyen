@@ -93,28 +93,39 @@ INDEX:
 */
 @font-face {
     font-family:'New Acamedy';
-    src:url('fonts/NEW-ACADEMY.ttf') format('truetype');    
+    src:url('fonts/ttf/NEW-ACADEMY.ttf') format('truetype'),
+        url('font/oet/NEW_ACADEMY.eot#iefix') format('embedded-opentype');    
 }
 
 @font-face {
     font-family:'VNI Aptima';
-    src:url('fonts/VNI-Aptima.ttf') format('truetype');
+    src:url('fonts/ttf/VNI-Aptima.ttf') format('truetype'),
+        url('font/oet/VNI-Aptima.eot#iefix') format('embedded-opentype');
 }
 @font-face {
     font-family:'BLAIR ITC LIGHT';
-    src:url('fonts/BLAIR_ITC_LIGHT.ttf') format('truetype');    
+    src:url('fonts/ttf/BLAIR_ITC_LIGHT.ttf') format('truetype'),    
+        url('font/oet/BLAIR_ITC_LIGHT.eot#iefix') format('embedded-opentype');
 }
 
 @font-face {
     font-family:'BLAIR ITC BOLD';
-    src:url('fonts/BLAIR_ITC_BOLD.ttf') format('truetype');
+    src:url('fonts/ttf/BLAIR_ITC_BOLD.ttf') format('truetype'),
+        url('font/oet/BLAIR_ITC_BOLD.eot#iefix') format('embedded-opentype');
 }
 
 @font-face {
     font-family:'BLAIR ITC MEDIUM';
-    src:url('fonts/Blair_ITC_Medium.ttf') format('truetype');
+    src:url('fonts/ttf/Blair_ITC_Medium.ttf') format('truetype'),
+        url('fonts/oet/Blair_ITC_Medium.eot#iefix') format('embedded-opentype');
     
 }
+@font-face {
+    font-family:'Georgia';
+    src:url('fonts/ttf/Georgia.ttf') format('truetype'),
+        url('fonts/oet/eorgia.eot.eot#iefix') format('embedded-opentype');    
+}
+
 html,
 body,
 div,
@@ -1991,10 +2002,13 @@ ul.products:after {
 ul.products li.product {
     position: relative;
     float: left;
-    width: 48%;
-    margin-right: 3.8%;
+    width: 30%;
+    margin-right: 3.33%;
     margin-bottom: 1.618em;
     text-align: center;
+}
+.related.products ul.products li.product{
+    width:15%;
 }
 ul.products li.product h3 {
     margin-bottom: 0;
@@ -2074,6 +2088,8 @@ ul.products .star-rating {
 .woocommerce-ordering {
     text-align: right;
     float: right;
+    padding-bottom: 12px;
+    padding-right: 3.0%;
 }
 /* 7.2.1 Single Product */
 .product {
@@ -2190,7 +2206,7 @@ table.variations tr:last-child th {
 .single-product .summary .product_meta {
     font-size: .857em;
     color: #9f9693;
-    border-top: 4px double #e8e4e3;
+
     padding-top: 1.618em;
     clear: both;
 }
@@ -3199,11 +3215,11 @@ img.ui-datepicker-trigger {
     color:#3f3f3f !important;
 }
 #menu-footer-menu a{
-    font-family: 'Aparajita' !important;
-    color:#3f3f3f !important;
+    font-family: "Aparajita" !important;
+    color:#58595b !important;
     text-transform: uppercase;
     font-size:16px !important;
-    color:#58595b;
+    
 }
 
 li.cat-item.current-cat.cat-parent.parent:before {
@@ -3221,5 +3237,6 @@ li.cat-item.current-cat.cat-parent.parent:before {
 .widget_product_categories ul.children li:before{
     content:"-" !important;
     -webkit-transform: rotate(0deg); 
-    transform: rotate(0deg); 
+    transform: rotate(0deg);    
+    font-family: arial;
 }
