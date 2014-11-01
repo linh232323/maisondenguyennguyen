@@ -588,11 +588,12 @@ ul.nav li a {
     font-family: "icomoon";
     font-size: 1em;
     content: "£";
+    color:rgba(0, 0, 0, 0);
     font-weight: normal;
     background: url(./images/bag.png) no-repeat;
     width: 25px;
     height: 40px;
-    text-indent: 999px;
+    text-indent: -999px;
     background-position-y: 4px;
 }
 #top .wc-nav li.cart a .contents {
@@ -2622,7 +2623,7 @@ ul.order_details:before {
     cursor: pointer;
     outline: none;
     background: #fff;
-    border: 1px solid #ff4800;
+    border: 1px solid #888;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
@@ -2644,7 +2645,7 @@ ul.order_details:before {
     -ms-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
-    background: #ff4800;
+    background: #888;
     -webkit-border-radius: 1em;
     border-radius: 1em;
     -moz-background-clip: padding;
@@ -3212,8 +3213,13 @@ li.cat-item.current-cat.cat-parent.parent:before {
 }
 .widget_product_categories ul li:before{
     content:"▲" !important;
-    color:#000 !important;
+    color:#474646 !important;
         -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+.widget_product_categories ul.children li:before{
+    content:"-" !important;
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg); 
 }

@@ -123,9 +123,6 @@ INDEX
         padding: 0 10px;
         margin:0;
         line-height: 40px;
-        color: #5c5c5c;
-        font-size: 11px;
-        font-family: "Lucida Console";
     }
     #top ul.nav > li a:hover {
         background: #f7f7f7;
@@ -613,12 +610,12 @@ INDEX
         left:-50%;
         margin:0;
     }
-   
+
     .mega-menu-item::before {
         padding-left:10px;
         content:"|";
     }
-   
+
     #main.fullwidth,
     .layout-full #main,
     .col-full,
@@ -1003,7 +1000,7 @@ INDEX
 }
 #menu-footer-menu li{
     display:inline;    
-    
+
 }
 #menu-footer-menu li a{
     color: #272625;
@@ -1038,7 +1035,7 @@ INDEX
 }
 #top nav ul#top-nav-left{
     float:left;
-    
+
 }
 
 ul#top-nav-left a{
@@ -1053,8 +1050,8 @@ ul#top-nav-left a{
 }
 .search {
     width:100%;
-    
-    
+
+
 }
 .search form{
     margin:0;
@@ -1069,7 +1066,7 @@ ul#top-nav-left a{
     -webkit-border-radius: 0;
     box-shadow: none;
     -webkit-box-shadow: none;
-    
+
 }
 div#header-status{
     float: left;
@@ -1109,9 +1106,62 @@ article header{
     text-align: center;
     text-transform: uppercase;
 }
+.ms-container:after {
+    content: "Videos this week";
+    color: #010101;
+    text-align: center;
+    width: 100%;
+    min-width: 100%;
+    float: left;
+    background: white;
+    padding: 60px 0 40px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "BLAIR ITC MEDIUM";
+}
+a.cart-parent:before {
+    content: "Shopping Bag";
+    text-transform: uppercase;
+    font-family: "Book Antiqua";
+    font-size:15px;
+    color:#3c3c3c;
+}
+a.cart-parent span {
+    display: none;
+}
+ul#top-nav-left li a {
+    color: #5c5c5c;
+    font-size: 11px;
+    font-family: "Lucida Console";
+
+}
+ul#top-nav-right li a {
+    font-family: "Book Antiqua";
+    font-size: 15px;
+    color: #3c3c3c;
+}
+.ms-thumb-frame, .ms-thumb-frame img{
+    height:190px !important;
+    width:325px !important;
+}
+.ms-thumb-frame{
+    margin-right:25px !important;
+}
+.ms-thumb-list{
+    height:190px !important;
+}
+header h1{
+    font-size: 24px;
+    line-height: normal;
+    font-family: "Georgia";
+    margin-bottom: 50px;
+}
+.widget_product_categories ul li{
+    padding-top: 25px;
+}
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
         display:none;
     }
-    
+
 }
