@@ -180,7 +180,7 @@ INDEX
     }
     #top .wc-nav li.cart a .contents {
         padding: .2em .618em;
-        background: #fff;
+
         -webkit-border-radius: 1em;
         border-radius: 1em;
         -moz-background-clip: padding;
@@ -650,7 +650,7 @@ INDEX
     }
     .layout-right-content #main .page-title{
         font-family: "Georgia";
-        font-size:24px;
+        font-size:30px;
         text-align:center;
     }
     .layout-right-content #sidebar {
@@ -658,9 +658,9 @@ INDEX
         width:25%;        
     }
     .layout-right-content #sidebar .primary{
-        padding: 30px;
-        background: #f3f3f4;
+        padding: 30px;        
         margin: 0 30px 30px 0px;
+        border-right: 1px solid #797979;
     }
     .layout-full #main {
         width: 100%;
@@ -699,7 +699,7 @@ INDEX
         position: relative;
     }
     ul.products li.product:nth-child(2n) {
-        margin-right: 3.8%;
+        margin-right: 3.33%;
     }
     ul.products li.product.first {
         clear: both;
@@ -721,6 +721,7 @@ INDEX
         clear: both;
     }
     .single-product .related {
+        padding-top:25px;
         clear: both;
     }
     .single-product .sale .summary h1 {
@@ -1016,6 +1017,7 @@ INDEX
 #menu-footer-menu li:before{
     padding-left:10px;
     content:"|";
+    color: rgb(145, 145, 145);
 }
 #menu-footer-menu li:first-child:before{
     content:none;
@@ -1127,13 +1129,13 @@ article header{
     font-family: "BLAIR ITC MEDIUM";
 }
 a.cart-parent:before {
-    content: "Shopping Bag";
+    content: "My Bag";
     text-transform: uppercase;
     font-family: "Book Antiqua";
-    font-size:12px;
+    font-size:13px;
     color:#3c3c3c;
 }
-a.cart-parent span {
+a.cart-parent span > span.amount {
     display: none;
 }
 ul#top-nav-left li a {
@@ -1164,7 +1166,38 @@ header h1{
     margin-bottom: 50px;
 }
 .widget_product_categories ul li{
-    padding-top: 25px;
+    padding-top: 10px;
+}
+.related h2{
+    text-align: center;
+}
+.related_div {
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: right;
+}
+.related_div ul{
+    margin-left: 0 !important;    
+    width: auto;
+    list-style: none;
+    position: relative;
+    left: 50%;
+}
+.related_div ul.products li.product img {
+    width: 125px;
+}
+.related_div ul.products li.product h3 {
+    display:none;
+}
+form.cart{
+    float: right;
+    width: 50%;
+    border-bottom: 1px solid silver;
+    padding-bottom: 17px;
+}
+.product_title{
+    margin-bottom:10px;
 }
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
