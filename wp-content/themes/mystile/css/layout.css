@@ -1045,6 +1045,7 @@ INDEX
 }
 #top nav ul#top-nav-left{
     float:left;
+    width:25%;
 
 }
 
@@ -1165,9 +1166,12 @@ header h1{
     line-height: normal;
     font-family: "Georgia";
     margin-bottom: 50px;
+    
 }
 .widget_product_categories ul li{
-    padding-top: 10px;
+    padding-top: 7px;
+    font-size:15px;
+    font-weight: normal;
 }
 .related h2{
     text-align: center;

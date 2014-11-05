@@ -212,6 +212,7 @@ video {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    font-family:"Georgia";
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -363,6 +364,10 @@ a {
     color: #4a413e;
     text-decoration: none;
     font-weight: bold;
+}
+
+.cat-item a{
+     font-weight: normal;
 }
 a:hover {
     color: #ff4800;
@@ -638,14 +643,17 @@ ul.nav li a {
 #header .site-description {
     display: none;
     margin-bottom: 0;
-    font-family: 'New Acamedy';
+    
     font-size:40px;
+    padding-bottom: 10px;
 }
 #header .site-title a,
 #header .site-description a {
     text-transform: none;
     font-weight: normal;
     text-decoration: none;
+    font-family: 'New Acamedy';
+    
 }
 #header hgroup {
     position: relative;
@@ -2009,6 +2017,7 @@ ul.products li.product {
 }
 ul.products li.product h3 {
     margin-bottom: 0;
+    font-family: "Georgia";
 }
 ul.products li.product a:hover h3 {
     color: #ff4800;
@@ -3212,7 +3221,7 @@ img.ui-datepicker-trigger {
 .mega-menu-wrap a{
     font-family: 'BLAIR ITC MEDIUM' !important;
     text-transform: uppercase;
-    font-size:12px !important;
+   
     color:#3f3f3f !important;
 }
 #menu-footer-menu a{
