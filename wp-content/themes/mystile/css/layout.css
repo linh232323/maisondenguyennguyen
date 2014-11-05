@@ -177,6 +177,7 @@ INDEX
     #top .wc-nav li.cart a {
         line-height: 40px;
         padding:0 10px;
+        text-transform: uppercase;
     }
     #top .wc-nav li.cart a .contents {
         padding: .2em .618em;
@@ -188,6 +189,8 @@ INDEX
         background-clip: padding-box;
         margin-left: 1em;
         display: inline;
+        font-size: 10px;
+        color: rgb(105, 104, 104);
     }
     /* 3. MAIN NAVIGATION DROPDOWN MENUS (Add main navigation presentational styles here) */
     #header #navigation {
@@ -625,6 +628,9 @@ INDEX
         max-width:1000px;
         width: 100%;
     }
+    .col-full section article header{
+        display:none;
+    }
     #main {
         width: 75%;
     }
@@ -1045,7 +1051,8 @@ INDEX
 }
 #top nav ul#top-nav-left{
     float:left;
-    width:25%;
+    width:30%;
+    
 
 }
 
@@ -1061,7 +1068,8 @@ ul#top-nav-left a{
 }
 .search {
     width:100%;
-
+    max-width: 1000px;
+    margin: auto;
 
 }
 .search form{
@@ -1082,7 +1090,7 @@ ul#top-nav-left a{
 div#header-status{
     float: left;
     text-align: center;
-    width: 50%;
+    width: 40%;
     color: #ee4e00;
     line-height: 40px;
     text-transform: uppercase;
@@ -1143,8 +1151,6 @@ a.cart-parent span > span.amount {
 ul#top-nav-left li a {
     color: #5c5c5c;
     font-size: 11px;
-    font-family: "Lucida Console";
-
 }
 ul#top-nav-right li a {
     font-family: "Book Antiqua";
@@ -1203,6 +1209,12 @@ form.cart{
 }
 .product_title{
     margin-bottom:10px;
+}
+.widget_product_categories ul{
+    text-transform: uppercase;
+}
+.widget_product_categories ul.children a {
+    font-size: 12px;
 }
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
