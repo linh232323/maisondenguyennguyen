@@ -337,7 +337,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-size: 1.4em;
+    font-size: 1.15em;
     line-height: 1.618;
     color: #6c6360;
     font-family: "Open Sans", sans-serif;
@@ -3219,7 +3219,8 @@ img.ui-datepicker-trigger {
     display: none !important;
 }
 .mega-menu-wrap a{
-    font-family: 'BLAIR ITC MEDIUM' !important;
+    font-family: 'BLAIR ITC BOLD' !important;
+    font-size: 11.5px !important;
     text-transform: uppercase;
    
     color:#3f3f3f !important;

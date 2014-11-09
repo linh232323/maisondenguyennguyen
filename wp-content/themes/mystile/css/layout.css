@@ -1052,8 +1052,10 @@ INDEX
 #top nav ul#top-nav-left{
     float:left;
     width:30%;
-    
+}
 
+#top-nav-left li{
+    width: 75px;
 }
 
 ul#top-nav-left a{
@@ -1150,7 +1152,7 @@ a.cart-parent span > span.amount {
 }
 ul#top-nav-left li a {
     color: #5c5c5c;
-    font-size: 11px;
+    font-size: 10px;
 }
 ul#top-nav-right li a {
     font-family: "Book Antiqua";
