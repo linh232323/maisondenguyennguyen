@@ -370,7 +370,7 @@ a {
      font-weight: normal;
 }
 a:hover {
-    color: #ff4800;
+    color: rgb(207,164,70);
     text-decoration: none;
 }
 .clear {
