@@ -1218,6 +1218,9 @@ form.cart{
 .widget_product_categories ul.children a {
     font-size: 12px;
 }
+div.wdpu-background {
+	background: white !important;
+}
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
         display:none;
