@@ -49,6 +49,9 @@ INDEX
     table {
         font-size: 1em !important;
     }
+    .cart-collaterals table {
+        font-size: 10.5px !important;
+    }
     /* 1. GLOBAL DROPDOWN STYLES (these are purely for the dropdown layout and you should only edit the width of the dropdowns) */
     ul.nav {
         position: relative;
@@ -305,6 +308,11 @@ INDEX
         display: none;
     }
     /* 4. GENERAL LAYOUT */
+    
+    #content{
+        position: relative;
+    }
+    
     #breadcrumbs {
         display: block;
     }
@@ -665,9 +673,12 @@ INDEX
         width:25%;        
     }
     .layout-right-content #sidebar .primary{
-        padding: 30px;        
+        padding: 10px 20px 20px 20px;
         margin: 0 30px 30px 0px;
         border-right: 1px solid #797979;
+        position: absolute;
+        height: 100%;
+        width: 170px;
     }
     .layout-full #main {
         width: 100%;
@@ -840,8 +851,8 @@ INDEX
         background: #fff;
         box-shadow: 0 1px 2px 0 #e8e4e3;
         -webkit-box-shadow: 0 1px 2px 0 #e8e4e3;
-        color: #ff4800;
-        border-top-color: #ff4800;
+        color: rgb(207,164,70);
+        border-top-color: rgb(207,164,70);
     }
     .woocommerce_tabs ul.tabs li.active a:after,
     .woocommerce-tabs ul.tabs li.active a:after,
@@ -920,9 +931,22 @@ INDEX
     .cart-collaterals .cart_totals {
         float: right;
     }
+    
+    .cart-collaterals .cart_totals  > h2{
+        text-transform: uppercase;
+        font-size:16px;
+        font-family: "Georgia";
+        font-weight: bold;
+    }
     .cart-collaterals .shipping_calculator {
         float: right;
         clear: right;
+    }
+    
+    .shipping_calculator h2{
+     padding-bottom: 7px;
+     text-transform: uppercase;
+     font-weight: bold;
     }
     .cart-collaterals .cross-sells ul.products li.product {
         width: 48%;
@@ -1077,7 +1101,7 @@ ul#top-nav-left a{
 .search form{
     margin:0;
     float:right;
-    padding-top:19px;
+    padding-top:10px;
 }
 .search form input[type=submit]{
     display:none;
@@ -1183,6 +1207,7 @@ header h1{
 }
 .related h2{
     text-align: center;
+    padding-bottom: 15px;
 }
 .related_div {
     float: right;

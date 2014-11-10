@@ -125,7 +125,7 @@
   position: relative;
 }
 #messagebox .wdpu-msg-inner .wdpu-inner {
-  overflow: auto;
+  overflow: none;
   height: 100%;
 }
 #messagebox .wdpu-msg-inner .wdpu-inner.no-bm {
