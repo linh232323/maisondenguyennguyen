@@ -202,3 +202,5 @@ add_action( 'wp_footer', 'woocommerce_demo_store' );
 add_action( 'woocommerce_view_order', 'woocommerce_order_details_table', 10 );
 add_action( 'woocommerce_thankyou', 'woocommerce_order_details_table', 10 );
 add_action( 'woocommerce_order_details_after_order_table', 'woocommerce_order_again_button' );
+
+remove_action('woocommerce_after_single_product_summary','woocommerce_output_product_data_tabs',10);

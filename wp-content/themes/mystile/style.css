@@ -2219,9 +2219,7 @@ table.variations tr:last-child th {
     font-size: 1.618em;
     color: #6e6e6e;
     font-weight: bold;
-    margin-bottom: 1.618em;
-    border-bottom: 1px solid silver;
-    padding-bottom: 13px;
+    margin-bottom: 0.618em;    
     float: left;
     width: 50%;
 }

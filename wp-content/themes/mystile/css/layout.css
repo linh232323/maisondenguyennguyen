@@ -1332,8 +1332,6 @@ header h1{
 form.cart{
     float: right;
     width: 50%;
-    border-bottom: 1px solid silver;
-    padding-bottom: 17.5px;
 }
 .product_title{
     margin-bottom:10px;
@@ -1378,4 +1376,10 @@ div.wdpu-background {
     border-radius: 4px;
     color: gold !important;
     text-transform: uppercase;
+}
+.woocommerce-tabs-top-border{
+    border-top: 1px solid silver;
+    padding-bottom: 30px;
+    width: 100%;
+    float: left;
 }

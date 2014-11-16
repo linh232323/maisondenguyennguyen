@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $tabs ) ) : ?>
-
+        <div class="woocommerce-tabs-top-border"></div>
 	<div class="woocommerce-tabs">
 		<ul class="tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
