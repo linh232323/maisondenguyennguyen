@@ -51,7 +51,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
                                 <a href="#" class="footer-logo"></a></div>
 			</div>
                         <div id="contact-social" class="col-mid col-footer">                     
-                            <h3 class="social-title">Stay Connected</h3>
+                            <h3 class="social-title">Watch more videos</h3>
                             <div class="social-container">
                                 <ul class="social-list">
                                     <li class="fb-icon"><a href="#"></a></li>
