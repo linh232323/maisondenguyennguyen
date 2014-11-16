@@ -305,12 +305,13 @@ INDEX
         display: none;
     }
     /* 4. GENERAL LAYOUT */
-    
+
     #content{
         position: relative;
         margin-bottom: 20px;
+        min-height: 600px;
     }
-    
+
     #breadcrumbs {
         display: block;
     }
@@ -714,15 +715,70 @@ INDEX
         position: absolute;
         height: 100%;
         width: 170px;
+        text-align: left;
     }
     .layout-full #main {
         width: 100%;
+    }
+    .col-footer{
+        width:33%;
+        border-right: 1px solid silver;
+        float:left;
+        min-height: 60px;        
     }
     .col-left {
         float: left;
     }
     .col-right {
         float: right;
+        border-right:none;
+        text-align: right;
+    }
+    .social-title{
+        text-align: center;
+        padding-bottom:20px;
+        font-family: "Georgia";
+        color:#58595b;
+        font-size:11px;
+        text-transform: uppercase;
+    }
+    .social-container{
+        float:right;
+        position: relative;
+        left:-50%;
+    }
+    .social-list{
+        display: inline;
+        list-style-type: none;
+        position: relative;
+        left:50%;
+    }
+    .social-list li{
+        position: relative;
+        float:left;
+        margin-left: 25px;
+    }
+    .social-list li a{
+        padding:5px;
+    }
+    .footer-logo-container {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .fb-icon{top:0px;left:0px;margin-left:0;
+             width:8px;height:17px;background: url("../images/sprites.png") no-repeat -26px -15px;}
+    .google-plus-icon{top:1px;left:0px;
+                      width:16px;height:15px;background: url("../images/sprites.png") no-repeat -16px -0px;}
+    .tumblr-icon{top:0px;left:0px;
+                 width:10px;height:17px;background: url("../images/sprites.png") no-repeat -16px -15px;}
+    .tw-icon{top:3px;left:0px;
+             width:16px;height:13px;background: url("../images/sprites.png") no-repeat -0px -13px;}
+    .youtube-icon{top:2px;left:0px;
+                  width:16px;height:13px;background: url("../images/sprites.png") no-repeat -0px -0px;}
+    .footer-logo {
+        background: url('../images/logo.png') no-repeat;        
+        padding: 40px;
+        background-size: contain;
     }
     .page-template-template-contact-php .location-twitter .col-left {
         float: left;
@@ -983,7 +1039,7 @@ INDEX
     .cart-collaterals .cart_totals {
         float: right;
     }
-    
+
     .cart-collaterals .cart_totals  > h2{
         text-transform: uppercase;
         font-size:16px;
@@ -994,11 +1050,11 @@ INDEX
         float: right;
         clear: right;
     }
-    
+
     .shipping_calculator h2{
-     padding-bottom: 7px;
-     text-transform: uppercase;
-     font-weight: bold;
+        padding-bottom: 7px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     .cart-collaterals .cross-sells ul.products li.product {
         width: 48%;
@@ -1216,15 +1272,6 @@ article header{
     text-transform: uppercase;
     font-family: "BLAIR ITC MEDIUM";
 }
-
-/*a.cart-parent:before {
-    content: "My Bag";
-    text-transform: uppercase;
-    font-family: "Book Antiqua";
-    font-size:13px;
-    color:#3c3c3c;
-}*/
-
 a.cart-parent span > span.amount {
     display: none;
 }
@@ -1252,7 +1299,7 @@ header h1{
     line-height: normal;
     font-family: "Georgia";
     margin-bottom: 50px;
-    
+
 }
 .widget_product_categories ul li{
     padding-top: 7px;
@@ -1298,11 +1345,37 @@ form.cart{
     font-size: 12px;
 }
 div.wdpu-background {
-	background: white !important;
+    background: white !important;
 }
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
         display:none;
     }
 
+}
+.wdpu-msg-inner .wdpu-inner{
+    overflow:hidden;
+}
+.wdpu-msg-inner .wdpu-text{
+    padding:0 !important;
+}
+.wdpu-msg-inner{
+    width:600px;
+    margin:0 auto;
+}
+.wdpu-msg .wdpu-close:after{
+    content:"shopping";
+}
+ .wdpu-msg .wdpu-close {
+    position: absolute;    
+    top: 379px !important;
+    right: 39% !important;
+    width: auto !important;
+    height: auto !important;    
+    background: #2A2929 !important;
+    background-image: none;
+    padding: 5px 20px !important;
+    border-radius: 4px;
+    color: gold !important;
+    text-transform: uppercase;
 }

@@ -46,17 +46,24 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 	<?php } // End IF Statement ?>
 		<footer id="footer" class="col-full">
 	
-			<div id="copyright" class="col-left">
-			<?php if( isset( $woo_options['woo_footer_left'] ) && $woo_options['woo_footer_left'] == 'true' ) {
-	
-					echo stripslashes( $woo_options['woo_footer_left_text'] );
-	
-			} else { ?>
-				<p><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?>. <?php _e( 'All Rights Reserved.', 'woothemes' ); ?></p>
-			<?php } ?>
+			<div id="copyright" class="col-left col-footer">                            
+                            <div class="footer-logo-container">
+                                <a href="#" class="footer-logo"></a></div>
 			</div>
-	
-			<div id="credit" class="col-right">
+                        <div id="contact-social" class="col-mid col-footer">                     
+                            <h3 class="social-title">Stay Connected</h3>
+                            <div class="social-container">
+                                <ul class="social-list">
+                                    <li class="fb-icon"><a href="#"></a></li>
+                                    <li class="tw-icon" ><a href="#"></a></li>
+                                    <li class="tumblr-icon" ><a href="#"></a></li>
+                                    <li class="youtube-icon"><a href="#"></a></li>
+                                    <li class="google-plus-icon"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            
+			</div>
+			<div id="credit" class="col-right col-footer">
 	        <?php if( isset( $woo_options['woo_footer_right'] ) && $woo_options['woo_footer_right'] == 'true' ) {
 	
 	        	echo stripslashes( $woo_options['woo_footer_right_text'] );

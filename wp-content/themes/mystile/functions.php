@@ -44,8 +44,18 @@ foreach ( $includes as $i ) {
 /* You can add custom functions below */
 /*-----------------------------------------------------------------------------------*/
 
+ //Will effect both the woocommerce archive page and the wordpress archive page
+remove_action('woocommerce_pagination', 'woocommerce_pagination', 10);
+remove_action('woocommerce_pagination', 'woocommerce_catalog_ordering', 20); 
+remove_action('woocommerce_pagination', 'woocommerce_pagination', 10); 
+remove_action('woocommerce_pagination', 'woocommerceframework_pagination', 10); 
+remove_action('woocommerce_pagination', 'woocommerce_pagination_wrap_open', 5); 
+remove_action('woocommerce_pagination', 'woocommerce_pagination_wrap_close', 25);
+function woocommerce_pagination() {
+        wp_pagenavi();     
+}
 
-
+add_action( 'woocommerce_pagination', 'woocommerce_pagination', 10);
 
 
 
