@@ -10,7 +10,7 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 
 .wp-pagenavi a, .wp-pagenavi span {
 	text-decoration: none;
-	border: 1px solid #BFBFBF;
+	border: none;
 	padding: 3px 5px;
 	margin: 2px;
 }

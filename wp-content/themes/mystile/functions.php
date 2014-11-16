@@ -56,7 +56,7 @@ function woocommerce_pagination() {
 }
 
 add_action( 'woocommerce_pagination', 'woocommerce_pagination', 10);
-
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
 
 
 

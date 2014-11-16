@@ -23,7 +23,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
-		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+		<?php if (false): // apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
@@ -32,7 +32,7 @@ get_header( 'shop' ); ?>
 		<?php do_action( 'woocommerce_archive_description' ); ?>
                         
 		<?php if ( have_posts() ) : ?>
-                        
+                        <div class="archive-product-header"></div>
                         <?php
                                 /**
                                  * woocommerce_pagination hook
@@ -52,7 +52,7 @@ get_header( 'shop' ); ?>
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
                         
-                       
+                       <div class="archive-product-top"></div>
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
@@ -64,7 +64,7 @@ get_header( 'shop' ); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			<?php woocommerce_product_loop_end(); ?>
-
+                       <div class="archive-product-bottom"></div>
 			<?php
 				/**
 				 * woocommerce_after_shop_loop hook
