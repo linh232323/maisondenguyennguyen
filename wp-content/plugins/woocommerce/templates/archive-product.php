@@ -30,9 +30,18 @@ get_header( 'shop' ); ?>
 		<?php endif; ?>
 
 		<?php do_action( 'woocommerce_archive_description' ); ?>
-
+                        
 		<?php if ( have_posts() ) : ?>
-
+                        
+                        <?php
+                                /**
+                                 * woocommerce_pagination hook
+                                 *
+                                 * @hooked woocommerce_pagination - 10
+                                 * @hooked woocommerce_catalog_ordering - 20
+                                 */
+                                do_action( 'woocommerce_pagination' );
+                        ?>
 			<?php
 				/**
 				 * woocommerce_before_shop_loop hook
@@ -42,7 +51,8 @@ get_header( 'shop' ); ?>
 				 */
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
-
+                        
+                       
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>

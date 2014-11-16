@@ -45,15 +45,17 @@ foreach ( $includes as $i ) {
 /*-----------------------------------------------------------------------------------*/
 
  //Will effect both the woocommerce archive page and the wordpress archive page
-function set_row_count_archive($query){
-    if ($query->is_archive) {
-            $query->set('posts_per_page', 12);
-   }
-    return $query;
+remove_action('woocommerce_pagination', 'woocommerce_pagination', 10);
+remove_action('woocommerce_pagination', 'woocommerce_catalog_ordering', 20); 
+remove_action('woocommerce_pagination', 'woocommerce_pagination', 10); 
+remove_action('woocommerce_pagination', 'woocommerceframework_pagination', 10); 
+remove_action('woocommerce_pagination', 'woocommerce_pagination_wrap_open', 5); 
+remove_action('woocommerce_pagination', 'woocommerce_pagination_wrap_close', 25);
+function woocommerce_pagination() {
+        wp_pagenavi();     
 }
 
-add_filter('pre_get_posts', 'set_row_count_archive');
-
+add_action( 'woocommerce_pagination', 'woocommerce_pagination', 10);
 
 
 
