@@ -44,7 +44,15 @@ foreach ( $includes as $i ) {
 /* You can add custom functions below */
 /*-----------------------------------------------------------------------------------*/
 
+ //Will effect both the woocommerce archive page and the wordpress archive page
+function set_row_count_archive($query){
+    if ($query->is_archive) {
+            $query->set('posts_per_page', 12);
+   }
+    return $query;
+}
 
+add_filter('pre_get_posts', 'set_row_count_archive');
 
 
 

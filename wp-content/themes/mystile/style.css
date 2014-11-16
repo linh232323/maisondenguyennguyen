@@ -609,7 +609,7 @@ ul.nav li a {
     width: 25px;
     height: 40px;
     text-indent: -999px;
-    background-position-y: 4px;
+    background-position-y: 5px;
 }
 #top .wc-nav li.cart a .contents {
     display: none;
