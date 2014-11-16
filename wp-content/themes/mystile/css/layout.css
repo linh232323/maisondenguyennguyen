@@ -742,15 +742,14 @@ INDEX
         text-transform: uppercase;
     }
     .social-container{
-        float:right;
+        float: left;
         position: relative;
-        left:-50%;
+        padding-left: 66px;
     }
     .social-list{
         display: inline;
         list-style-type: none;
-        position: relative;
-        left:50%;
+        position: relative;        
     }
     .social-list li{
         position: relative;
