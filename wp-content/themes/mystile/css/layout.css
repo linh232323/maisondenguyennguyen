@@ -525,20 +525,20 @@ INDEX
         width: 48%;
         float: right;
     }
-    
+
     #customer_login .col-1 {
         background-color: #f0f0f0;
         padding: 30px;
         width: 300px;
     }
-    
+
     #customer_login .col-2 {
         width: 40%;
         border: 1px solid #c3c3c3;
         background-color: #ffffff;
         padding: 30px;
     }
-    
+
     .checkout .col-1, .checkout .col-2 {
         width: 40%;
     }
@@ -551,18 +551,17 @@ INDEX
         display: block;
         padding: .206em 0;
     }
-    
+
     .form-row label[for=rememberme]{
         padding-top:7px;
     }
-    
+
     #rememberme{
         margin-right: 5px;
         margin-top: 2px;
     }
 
     .page-title{
-        border-bottom: 1px solid #c3c3c3;
         color: #3c3c3c;
         font-family: "Georgia";
         font-size: 25px;
@@ -571,7 +570,7 @@ INDEX
         text-align: center;
         text-transform: uppercase;
     }
-    
+
     .form-row .input-text,
     .form-row select {
         width: 100%;
@@ -710,7 +709,7 @@ INDEX
         width:25%;        
     }
     .layout-right-content #sidebar .primary{
-        padding: 10px 20px 10px 20px;
+        padding: 3px 20px 10px 20px;
         margin: 0 30px 0px 0px;
         position: absolute;
         height: 100%;
@@ -973,11 +972,11 @@ INDEX
         padding: 2.618em;
         border: 1px solid #e8e4e3;
     }
-    
+
     .entry-summary #tab-description{
         min-height: 265px;
     }
-    
+
     .woocommerce_tabs table.shop_attributes p,
     .woocommerce-tabs table.shop_attributes p,
     .ui-tabs table.shop_attributes p {
@@ -987,15 +986,15 @@ INDEX
     table.cart {
         margin-bottom: 2.618em;
     }
-    
+
     table.cart thead{
         background: #f0f0f0;
     }
-    
+
     table.cart .product-name{
         text-transform: uppercase;
     }
-    
+
     table.cart th.product-thumbnail {
         width: 160px;
     }
@@ -1364,7 +1363,7 @@ div.wdpu-background {
 .wdpu-msg .wdpu-close:after{
     content:"shopping";
 }
- .wdpu-msg .wdpu-close {
+.wdpu-msg .wdpu-close {
     position: absolute;    
     top: 379px !important;
     right: 39% !important;
@@ -1382,4 +1381,19 @@ div.wdpu-background {
     padding-bottom: 30px;
     width: 100%;
     float: left;
+}
+.wp-pagenavi{
+    float: right;
+    padding: 7px 0 2px 0;
+}
+.archive-product-bottom,.archive-product-top,.archive-product-header{
+    border-top:1px solid silver;
+    float:left;
+    width:100%;
+}
+.archive-product-top {
+    padding-bottom: 15px;
+}
+select.orderby {
+    border: none;
 }
