@@ -168,10 +168,12 @@ add_filter( 'woocommerce_product_tabs', 'woocommerce_sort_product_tabs', 99 );
  * @see woocommerce_checkout_login_form()
  * @see woocommerce_checkout_coupon_form()
  * @see woocommerce_order_review()
+ * @see my_custom_checkout_field()
  */
 add_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
 add_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 add_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
+add_action( 'woocommerce_after_order_notes', 'my_custom_checkout_field' );
 
 /**
  * Cart

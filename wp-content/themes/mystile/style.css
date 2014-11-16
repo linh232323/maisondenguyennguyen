@@ -240,6 +240,12 @@ input[type="image"],
 button {
     cursor: pointer;
 }
+
+.cart-empty{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
 /* Bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img {
     -ms-interpolation-mode: bicubic;
@@ -388,7 +394,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Bree Serif", sans-serif;
+    font-family: "Georgia";
     color: #363230;
     margin: 0;
     font-weight: normal;
@@ -430,6 +436,12 @@ p {
     orphans: 3;
     widows: 3;
 }
+
+.entry-content p{
+    font-size: 14px;
+    color: #3c3c3c;
+}
+
 ul,
 ol,
 dl,
@@ -493,7 +505,7 @@ table {
 table th,
 table td {
     border-bottom: 1px solid #e8e4e3;
-    padding: 1em;
+    padding: 8px;
     vertical-align: middle;
     text-align: left;
 }
@@ -596,7 +608,7 @@ ul.nav li a {
     padding-top: .25em;
     padding-left: 0;
 }
-#top .wc-nav li.cart a:after {    
+#top .wc-nav li.cart a:before {    
     display: inline-block;
     font-size: .857em;
     margin-left: .618em;
@@ -605,7 +617,7 @@ ul.nav li a {
     content: "£";
     color:rgba(0, 0, 0, 0);
     font-weight: normal;
-    background: url(./images/bag.png) no-repeat;
+    background: url("./images/bag.png") no-repeat scroll 2px 4px rgba(0, 0, 0, 0);
     width: 25px;
     height: 40px;
     text-indent: -999px;
@@ -629,7 +641,7 @@ ul.nav li a {
 /* 2.3 Header */
 #header {
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border-bottom: 10px solid #000;
     clear: both;
     position: relative;
@@ -642,8 +654,7 @@ ul.nav li a {
 #header .site-description {
     display: none;
     margin-bottom: 0;
-    
-    font-size:40px;
+    font-size: 42px;
     padding-bottom: 10px;
 }
 #header .site-title a,
@@ -883,7 +894,6 @@ ul.nav li a {
 .post img,
 .type-page img {
     padding: .53em;
-    border: 1px solid #e8e4e3;
     background: #fff;
     max-width: 100%;
     height: auto !important;
@@ -1083,10 +1093,11 @@ ul.nav li a {
 }
 .widget h3 {
     color: #39302d;
-    border-bottom: 2px solid #d9dadb;    
-    padding: 2.618em 0 0.618em 0;
-    font-family: "Open Sans", sans-serif;
+    border-bottom: 1px solid #b8b8b8;    
+    padding: 2.618em 0 0.318em 0;
+    font-family: "Georgia";
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .widget ul {
     list-style: none;
@@ -1883,19 +1894,20 @@ div.quantity .minus:hover {
 }
 div.quantity .qty {
     margin: 0 .618em;
-    width: 2.618em;
+    width: 3.118em;
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    font-size: 11px;
 }
 table div.quantity {
     font-size: .857em;
 }
+
 .single-product div.quantity {
     float: left;
-    
-    border-right: 4px double #e8e4e3;
-      margin-right: 0.618em;
+    font-size: 10px;
+    margin-right: 0.618em;
     padding-right: 0.618em;
 }
 .single-product table div.quantity {
@@ -2039,7 +2051,6 @@ ul.products li.product img {
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
-    border: 1px solid #e8e4e3;
     background: #fff;
     margin: 0 auto 1em;
 }
@@ -2110,7 +2121,7 @@ ul.products .star-rating {
     color: #fff;
     font-weight: bold;
     padding: 0 .857em;
-    line-height: 4.236em;
+    line-height: 3.536em;
     -webkit-border-radius: 100%;
     border-radius: 100%;
     -moz-background-clip: padding;
@@ -2206,7 +2217,7 @@ table.variations tr:last-child th {
 }
 .single-product .summary .price:first-child {
     font-size: 1.618em;
-    color: #888888;
+    color: #6e6e6e;
     font-weight: bold;
     margin-bottom: 1.618em;
     border-bottom: 1px solid silver;
@@ -2215,10 +2226,10 @@ table.variations tr:last-child th {
     width: 50%;
 }
 .single-product .summary .product_meta {
-    font-size: .857em;
+    font-size: 11.5px;
     color: #9f9693;
-
-    padding-top: 1.618em;
+    /*padding-top: 1.618em;*/
+    float: right;
     clear: both;
 }
 .single-product .summary .product_meta a {
@@ -2393,7 +2404,7 @@ table.cart .product-quantity .minus {
     display: inline-block;
 }
 table.cart img {
-    width: 3.631em;
+    width: 100px;
     height: auto;
 }
 ul#shipping_method {
@@ -2715,9 +2726,11 @@ ul.order_details:before {
 #customer_login .col-2 h2:before {
     content: "U";
 }
+
 #customer_login .lost_password {
     display: block;
     margin-top: 1em;
+    float: right;
 }
 ul.digital-downloads li {
     list-style: none;
@@ -2863,7 +2876,7 @@ input[type=email] {
     padding: .236em .5em;
     border: 1px solid #c4c0bf;
     -webkit-border-radius: 0.125em;
-    border-radius: 0.125em;
+    /*border-radius: 0.125em;*/
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -2879,11 +2892,11 @@ input[type=email] {
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     /* Opera/IE 8+ */
     -webkit-appearance: none;
     -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.03), inset 0 1px 2px #d8d4d3, 0 1px #ffffff;
-    box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.03), inset 0 1px 2px #d8d4d3, 0 1px #ffffff;
+    /*box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.03), inset 0 1px 2px #d8d4d3, 0 1px #ffffff;*/
 }
 input[type=text]:focus,
 input.input-text:focus,
@@ -2891,16 +2904,14 @@ textarea:focus,
 input.txt:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
-    border-color: rgba(255, 72, 0, 0.8);
+    border-color: rgb(207,164,70);
     background: #fff;
     -webkit-box-shadow: 0 0 0 0.327em rgba(255, 72, 0, 0.1), 0 0 0.202em rgba(255, 72, 0, 0.4);
-    box-shadow: 0 0 0 0.327em rgba(255, 72, 0, 0.1), 0 0 0.202em rgba(255, 72, 0, 0.4);
+    /*box-shadow: 0 0 0 0.327em rgba(255, 72, 0, 0.1), 0 0 0.202em rgba(255, 72, 0, 0.4);*/
 }
 input[type="checkbox"] {
     -webkit-appearance: none;
     /* Hides the default checkbox style */
-    height: 1.618em;
-    width: 1.618em;
     cursor: pointer;
     position: relative;
     -webkit-transition: .15s;
@@ -2935,8 +2946,6 @@ input[type="checkbox"]:hover:before {
 input[type="radio"] {
     -webkit-appearance: none;
     /* Hides the default checkbox style */
-    height: 1.618em;
-    width: 1.618em;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
@@ -2999,7 +3008,7 @@ button.button {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #ff7b33, inset 0 -1px #cc1500;
-    box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #ff7b33, inset 0 -1px #cc1500;
+    /*box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #ff7b33, inset 0 -1px #cc1500;*/
 }
 a.button.alt,
 a.comment-reply-link.alt,
@@ -3016,17 +3025,17 @@ input[type=submit].checkout,
 input.button.checkout,
 button.button.checkout {
     background-color: #777777;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#777777), to(#444444));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5e5e5e), to(#444444));
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #777777, #444444);
+    background-image: -webkit-linear-gradient(top, #5e5e5e, #444444);
     /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, #777777, #444444);
+    background-image: -moz-linear-gradient(top, #5e5e5e, #444444);
     /* FF3.6+ */
-    background-image: -ms-linear-gradient(top, #777777, #444444);
+    background-image: -ms-linear-gradient(top, #5e5e5e, #444444);
     /* IE10 */
-    background-image: -o-linear-gradient(top, #777777, #444444);
+    background-image: -o-linear-gradient(top, #5e5e5e, #444444);
     /* Opera 11.10+ */
-    background-image: linear-gradient(to bottom, #777777, #444444);
+    background-image: linear-gradient(to bottom, #5e5e5e, #444444);
     text-shadow: 0 1px 0 #333333;
     border: 1px solid #222222;
     -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #999999, inset 0 -1px #333333;
@@ -3221,17 +3230,36 @@ img.ui-datepicker-trigger {
 }
 .mega-menu-wrap > ul > li > a{
     font-family: 'BLAIR ITC BOLD' !important;
-    font-size: 11.5px !important;
+    font-size: 11px !important;
     text-transform: uppercase;
-   
     color:#3f3f3f !important;
 }
+
+.mega-sub-menu > li > a{
+    font-family: 'Georgia' !important;
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    color: #2a2a2a !important;
+}
+
+.mega-sub-menu > li > a{
+    line-height: 30px !important;
+}
+
 #menu-footer-menu a{
     font-family: "Aparajita" !important;
     color:#58595b !important;
     text-transform: uppercase;
     font-size:16px !important;
     
+}
+
+#mega-menu-wrap-primary-menu-7 #mega-menu-primary-menu-7 li.mega-menu-item *:before {
+    color: silver;
+    content: "/";
+    font-size: 24px !important;
+    line-height: 30px !important;
+    padding-right: 15px;
 }
 
 li.cat-item.current-cat.cat-parent.parent:before {
@@ -3255,15 +3283,13 @@ li.cat-item.current-cat.cat-parent.parent:before {
 
 .cart > .single_add_to_cart_button{  
     border: none !important;
-    color: rgb(60, 60, 60);
     box-shadow: none !important;
-    background: none no-repeat !important;
-    background-image: url(./images/bag.png) !important;    
+    /*background-image: url(./images/bag.png) !important;*/    
     background-color: none !important;
     -webkit-box-shadow: none !important;
     text-shadow: none !important;
     text-transform: uppercase;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 .cart > .single_add_to_cart_button:hover{
     background: no-repeat;

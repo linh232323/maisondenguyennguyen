@@ -25,7 +25,8 @@ if ( ! woocommerce_products_will_display() )
 	$last     = min( $total, $wp_query->get( 'posts_per_page' ) * $paged );
 
 	if ( 1 == $total ) {
-		_e( 'Showing the single result', 'woocommerce' );
+            // Do nothing
+            // _e( 'Showing the single result', 'woocommerce' );
 	} elseif ( $total <= $per_page || -1 == $per_page ) {
 		//printf( __( 'Showing all %d results', 'woocommerce' ), $total );
 	} else {

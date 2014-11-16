@@ -105,7 +105,7 @@ INDEX
         margin: 0 -3.631em;
         padding: 0 3.631em;
         height: 40px;
-        background: #eae8e5;
+        background: #ececec;
     }
     #top head-line{
         color:#f00;
@@ -183,17 +183,14 @@ INDEX
         text-transform: uppercase;
     }
     #top .wc-nav li.cart a .contents {
-        padding: .2em .618em;
-
         -webkit-border-radius: 1em;
-        border-radius: 1em;
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
         margin-left: 1em;
         display: inline;
         font-size: 10px;
-        color: rgb(105, 104, 104);
+        color: rgb(85, 84, 84);
     }
     /* 3. MAIN NAVIGATION DROPDOWN MENUS (Add main navigation presentational styles here) */
     #header #navigation {
@@ -311,6 +308,7 @@ INDEX
     
     #content{
         position: relative;
+        margin-bottom: 20px;
     }
     
     #breadcrumbs {
@@ -526,6 +524,23 @@ INDEX
         width: 48%;
         float: right;
     }
+    
+    #customer_login .col-1 {
+        background-color: #f0f0f0;
+        padding: 30px;
+        width: 300px;
+    }
+    
+    #customer_login .col-2 {
+        width: 40%;
+        border: 1px solid #c3c3c3;
+        background-color: #ffffff;
+        padding: 30px;
+    }
+    
+    .checkout .col-1, .checkout .col-2 {
+        width: 40%;
+    }
     .form-row {
         width: 48%;
         float: left;
@@ -535,6 +550,27 @@ INDEX
         display: block;
         padding: .206em 0;
     }
+    
+    .form-row label[for=rememberme]{
+        padding-top:7px;
+    }
+    
+    #rememberme{
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+
+    .page-title{
+        border-bottom: 1px solid #c3c3c3;
+        color: #3c3c3c;
+        font-family: "Georgia";
+        font-size: 25px;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
     .form-row .input-text,
     .form-row select {
         width: 100%;
@@ -607,7 +643,7 @@ INDEX
     #header hgroup {
         text-align:center;
         margin: 0 -3.631em;
-        padding: 0 3.631em;
+        padding: 0.5em 3.531em;
     }
     #header #navigation {
         float: right;
@@ -665,7 +701,7 @@ INDEX
     }
     .layout-right-content #main .page-title{
         font-family: "Georgia";
-        font-size:30px;
+        font-size:25px;
         text-align:center;
     }
     .layout-right-content #sidebar {
@@ -673,9 +709,8 @@ INDEX
         width:25%;        
     }
     .layout-right-content #sidebar .primary{
-        padding: 10px 20px 20px 20px;
-        margin: 0 30px 30px 0px;
-        border-right: 1px solid #797979;
+        padding: 10px 20px 10px 20px;
+        margin: 0 30px 0px 0px;
         position: absolute;
         height: 100%;
         width: 170px;
@@ -704,7 +739,7 @@ INDEX
         margin: 0;
     }
     .footer-wrap {
-        background: #eae8e5;
+        background: #ececec;
         margin: 0 -3.631em;
         padding: 0 3.631em;
     }
@@ -882,6 +917,11 @@ INDEX
         padding: 2.618em;
         border: 1px solid #e8e4e3;
     }
+    
+    .entry-summary #tab-description{
+        min-height: 265px;
+    }
+    
     .woocommerce_tabs table.shop_attributes p,
     .woocommerce-tabs table.shop_attributes p,
     .ui-tabs table.shop_attributes p {
@@ -890,6 +930,18 @@ INDEX
     /* 7.3 Cart */
     table.cart {
         margin-bottom: 2.618em;
+    }
+    
+    table.cart thead{
+        background: #f0f0f0;
+    }
+    
+    table.cart .product-name{
+        text-transform: uppercase;
+    }
+    
+    table.cart th.product-thumbnail {
+        width: 160px;
     }
     table.cart .product-remove,
     table.cart .product-thumbnail,
@@ -1079,7 +1131,7 @@ INDEX
 }
 
 #top-nav-left li{
-    width: 75px;
+    width: 70px;
 }
 
 ul#top-nav-left a{
@@ -1121,7 +1173,7 @@ div#header-status{
     line-height: 40px;
     text-transform: uppercase;
     font-family: 'Book Antiqua';    
-    font-size: 16px;
+    font-size: 14.5px;
 }
 div#credit {
     font-size: 13px;
@@ -1135,8 +1187,8 @@ div#credit {
     width: 40%;
     height: 19px;
     float: left;
-    border-bottom: 2px solid silver;
-    margin-bottom: 30px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 40px;
 }
 .tw {
     float: left;
@@ -1164,23 +1216,25 @@ article header{
     text-transform: uppercase;
     font-family: "BLAIR ITC MEDIUM";
 }
-a.cart-parent:before {
+
+/*a.cart-parent:before {
     content: "My Bag";
     text-transform: uppercase;
     font-family: "Book Antiqua";
     font-size:13px;
     color:#3c3c3c;
-}
+}*/
+
 a.cart-parent span > span.amount {
     display: none;
 }
 ul#top-nav-left li a {
     color: #5c5c5c;
-    font-size: 10px;
+    font-size: 9.5px;
 }
 ul#top-nav-right li a {
     font-family: "Book Antiqua";
-    font-size: 13px;
+    font-size: 11.5px;
     color: #3c3c3c;
 }
 .ms-thumb-frame, .ms-thumb-frame img{
@@ -1202,7 +1256,7 @@ header h1{
 }
 .widget_product_categories ul li{
     padding-top: 7px;
-    font-size:15px;
+    font-size:13px;
     font-weight: normal;
 }
 .related h2{
@@ -1232,7 +1286,7 @@ form.cart{
     float: right;
     width: 50%;
     border-bottom: 1px solid silver;
-    padding-bottom: 17px;
+    padding-bottom: 17.5px;
 }
 .product_title{
     margin-bottom:10px;
