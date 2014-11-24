@@ -47,11 +47,17 @@ INDEX
         padding: 0 3.631em;
     }
     table {
-        font-size: 1em !important;
+        font-size: 12px !important;
     }
+    
+    table tbody .product-subtotal, table tbody .product-price {
+        font-size: 14px !important;
+    }
+    
     .cart-collaterals table {
         font-size: 10.5px !important;
     }
+    
     /* 1. GLOBAL DROPDOWN STYLES (these are purely for the dropdown layout and you should only edit the width of the dropdowns) */
     ul.nav {
         position: relative;
@@ -189,7 +195,8 @@ INDEX
         background-clip: padding-box;
         margin-left: 1em;
         display: inline;
-        font-size: 10px;
+        font-size: 11px;
+        font-weight: normal;
         color: rgb(85, 84, 84);
     }
     /* 3. MAIN NAVIGATION DROPDOWN MENUS (Add main navigation presentational styles here) */
@@ -547,6 +554,10 @@ INDEX
         float: left;
         margin-bottom: 2.053em;
     }
+    
+    .checkout .form-row{
+        margin-bottom: 15px;
+    }
     .form-row label {
         display: block;
         padding: .206em 0;
@@ -765,7 +776,7 @@ INDEX
     }
     .footer-logo-container {
         text-align: center;
-        padding-top: 20px;
+        padding: 20px 0 0 50px;
     }
     .fb-icon{top:0px;left:0px;margin-left:0;
              width:8px;height:17px;background: url("../images/sprites.png") no-repeat -26px -15px;}
@@ -837,6 +848,7 @@ INDEX
     }
     .single-product .sale .summary h1 {
         width: 80%;
+        padding-bottom: 15px;
     }
     .woocommerce_tabs ul.tabs,
     .woocommerce-tabs ul.tabs,
@@ -883,7 +895,7 @@ INDEX
     .woocommerce_tabs .ui-tabs-nav li a:hover,
     .woocommerce-tabs .ui-tabs-nav li a:hover,
     .ui-tabs .ui-tabs-nav li a:hover {
-        color: #ff4800;
+        color: #CFA446;
     }
     .woocommerce_tabs ul.tabs li.active,
     .woocommerce-tabs ul.tabs li.active,
@@ -918,8 +930,8 @@ INDEX
         left: 0;
         right: 0;
         height: .236em;
-        background: #ff4800;
-        border-top: 1px solid #ff5911;
+        background: rgba(167, 107, 107, 1);
+        border-top: 1px solid rgba(167, 107, 107, 1);
         -webkit-border-top-left-radius: 2px;
         -webkit-border-top-right-radius: 2px;
         border-top-left-radius: 2px;
@@ -1047,12 +1059,16 @@ INDEX
         font-size:16px;
         font-family: "Georgia";
         font-weight: bold;
+        padding-bottom: 10px;
     }
     .cart-collaterals .shipping_calculator {
         float: right;
         clear: right;
     }
-
+    
+    .cart-collaterals .amount{
+        font-size: 14px;
+    }
     .shipping_calculator h2{
         padding-bottom: 7px;
         text-transform: uppercase;
@@ -1061,9 +1077,14 @@ INDEX
     .cart-collaterals .cross-sells ul.products li.product {
         width: 48%;
     }
+    
     /* 7.4 Checkout */
     .checkout #order_review {
         padding: 1.618em;
+    }
+    
+    .checkout #order_review #payment{
+        width: 50%;
     }
     .checkout #shiptobilling {
         float: right;
@@ -1153,7 +1174,7 @@ INDEX
 }
 #menu-footer-menu li a{
     color: #272625;
-    font-size: 10px;
+    font-size: 9px;
 }
 #menu-footer-menu li:before{
     padding-left:10px;
@@ -1234,7 +1255,7 @@ div#header-status{
     font-size: 14.5px;
 }
 div#credit {
-    font-size: 13px;
+    font-size: 11.5px;
 }
 .wp-video {
     max-width: 100%;
@@ -1345,8 +1366,14 @@ form.cart{
     font-size: 12px;
 }
 div.wdpu-background {
-    background: white !important;
+    background: #2C150C !important;
 }
+
+div.wdpu-msg {
+    background: none !important;
+    box-shadow: none !important;
+}
+
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
         display:none;

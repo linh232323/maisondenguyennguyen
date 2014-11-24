@@ -747,6 +747,7 @@ ul.nav li a {
 }
 #footer {
     padding: 60px 0;
+    padding-right: 80px;
     color: #58595b;
 }
 #footer #credit img {
@@ -1890,7 +1891,7 @@ div.quantity .minus {
 }
 div.quantity .plus:hover,
 div.quantity .minus:hover {
-    color: #dd2600;
+    color: rgba(222, 183, 99, 1);
 }
 div.quantity .qty {
     margin: 0 .618em;
@@ -1898,7 +1899,8 @@ div.quantity .qty {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
-    font-size: 11px;
+    font-size: 12px;
+    font-family: Arial;
 }
 table div.quantity {
     font-size: .857em;
@@ -2120,7 +2122,7 @@ ul.products .star-rating {
     color: #fff;
     font-weight: bold;
     padding: 0 .857em;
-    line-height: 3.536em;
+    line-height: 4.136em;
     -webkit-border-radius: 100%;
     border-radius: 100%;
     -moz-background-clip: padding;
@@ -2149,7 +2151,7 @@ table.variations tr:last-child th {
     /* Opera/IE 8+ */
     padding: .618em;
     background: #fff;
-    border: 1px solid #868686;
+    /*border: 1px solid #868686;*/
     width: 100%;
 }
 .images .thumbnails {
@@ -2454,7 +2456,7 @@ ul#shipping_method {
     padding-left: 1em;
 }
 .checkout #order_review #payment ul {
-    border-bottom: 4px double #e8e4e3;
+    border-bottom: 1px solid #e8e4e3;
 }
 .checkout #order_review #payment ul li {
     list-style: none;
@@ -2462,20 +2464,23 @@ ul#shipping_method {
 }
 .checkout #order_review #payment ul li input[type="radio"] {
     margin-right: 1em;
-    margin-top: .382em;
+     margin-top: 10px;
     float: left;
     box-shadow: 0 1px 0 0 #ffffff;
     -webkit-box-shadow: 0 1px 0 0 #ffffff;
 }
 .checkout #order_review #payment ul li label {
-    font-weight: bold;
-    margin-bottom: .618em;
     display: block;
+    font-weight: bold;
+    height: 40px;
+    margin-bottom: 0.618em;
+    padding-top: 5px;
 }
 .checkout #order_review #payment ul li label img {
     float: right;
     padding: 0;
     border: 0;
+    margin-top: -5px;
 }
 .checkout #order_review #payment ul li .payment_box {
     background: #fff;
@@ -2494,7 +2499,7 @@ ul#shipping_method {
 }
 .checkout #order_review .form-row.place-order {
     width: 100%;
-    margin-bottom: 0;
+    margin: 15px 0 0 0;
 }
 .checkout #order_review .form-row.place-order:after {
     content: "\0020";
@@ -2981,24 +2986,24 @@ button.button {
     /* IE fix */
     width: auto;
     /* IE fix */
-    line-height: 1.618em;
+    line-height: 1.818em;
     margin: 0 .327em;
     -webkit-font-smoothing: subpixel-antialiased;
     font-weight: bold;
-    text-shadow: 0 1px 0 #cc1500;
-    background-color: #ff5911;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5911), to(#dd2600));
+    /*text-shadow: 0 1px 0 #cc1500;*/
+    /*background-color: #ff5911;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5e5e5e), to(#444444));
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #ff5911, #dd2600);
+    background-image: -webkit-linear-gradient(top, #5e5e5e, #444444);
     /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, #ff5911, #dd2600);
+    background-image: -moz-linear-gradient(top, #5e5e5e, #444444);
     /* FF3.6+ */
-    background-image: -ms-linear-gradient(top, #ff5911, #dd2600);
+    background-image: -ms-linear-gradient(top, #5e5e5e, #444444);
     /* IE10 */
-    background-image: -o-linear-gradient(top, #ff5911, #dd2600);
+    background-image: -o-linear-gradient(top, #5e5e5e, #444444);
     /* Opera 11.10+ */
-    background-image: linear-gradient(to bottom, #ff5911, #dd2600);
-    border: 1px solid #bb0400;
+    background-image: linear-gradient(to bottom, #5e5e5e, #444444);
+    /*border: 1px solid #bb0400;*/
     -webkit-border-radius: 0.202em;
     border-radius: 0.202em;
     -moz-background-clip: padding;
@@ -3118,18 +3123,18 @@ input[type=submit]:hover,
 input.button:hover,
 button.button:hover {
     text-decoration: none;
-    background-color: #ff5911;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5911), to(#ee3700));
+    /*background-color: #ff5911;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#777777), to(#555555));
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #ff5911, #ee3700);
+    background-image: -webkit-linear-gradient(top, #777777, #555555);
     /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, #ff5911, #ee3700);
+    background-image: -moz-linear-gradient(top, #777777, #555555);
     /* FF3.6+ */
-    background-image: -ms-linear-gradient(top, #ff5911, #ee3700);
+    background-image: -ms-linear-gradient(top, #777777, #555555);
     /* IE10 */
-    background-image: -o-linear-gradient(top, #ff5911, #ee3700);
+    background-image: -o-linear-gradient(top, #777777, #555555);
     /* Opera 11.10+ */
-    background-image: linear-gradient(to bottom, #ff5911, #ee3700);
+    background-image: linear-gradient(to bottom, #777777, #555555);
 }
 a.button:active,
 a.comment-reply-link:active,
@@ -3138,20 +3143,20 @@ a.comment-reply-link:active,
 input[type=submit]:active,
 input.button:active,
 button.button:active {
-    background-color: #ee3700;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ee3700), to(#ff5911));
+    /*background-color: #ee3700;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#676767), to(#797979));
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #ee3700, #ff5911);
+    background-image: -webkit-linear-gradient(top, #676767, #797979);
     /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, #ee3700, #ff5911);
+    background-image: -moz-linear-gradient(top, #676767, #797979);
     /* FF3.6+ */
-    background-image: -ms-linear-gradient(top, #ee3700, #ff5911);
+    background-image: -ms-linear-gradient(top, #676767, #797979);
     /* IE10 */
-    background-image: -o-linear-gradient(top, #ee3700, #ff5911);
+    background-image: -o-linear-gradient(top, #676767, #797979);
     /* Opera 11.10+ */
-    background-image: linear-gradient(to bottom, #ee3700, #ff5911);
+    background-image: linear-gradient(to bottom, #676767, #797979);
     -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), inset 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), inset 0 1px 2px rgba(0, 0, 0, 0.2);*/
 }
 a.remove {
     font-family: 'WebSymbolsRegular';
@@ -3286,9 +3291,9 @@ li.cat-item.current-cat.cat-parent.parent:before {
     -webkit-box-shadow: none !important;
     text-shadow: none !important;
     text-transform: uppercase;
-    margin-left: 30px;
+    float: right;
 }
 .cart > .single_add_to_cart_button:hover{
     background: no-repeat;
-    color: rgb(197, 195, 192);
+    /*color: #CFA446;*/
 }
