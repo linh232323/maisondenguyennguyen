@@ -316,7 +316,7 @@ INDEX
     #content{
         position: relative;
         margin-bottom: 20px;
-        min-height: 600px;
+        min-height: 400px;
     }
 
     #breadcrumbs {
@@ -504,8 +504,8 @@ INDEX
         float: right;
     }
     #respond {
-        width: 82.7%;
-        float: right;
+/*        width: 82.7%;
+        float: right;*/
     }
     #fancybox-outer #respond {
         width: 100%;
@@ -515,7 +515,9 @@ INDEX
         width: 90%;
     }
     .col2-set {
+        border: 1px solid #c5c5c5;
         clear: both;
+        padding: 10px;
     }
     .col2-set:after {
         content: "\0020";
@@ -525,11 +527,17 @@ INDEX
         clear: both;
     }
     .col2-set .col-1 {
-        width: 48%;
+        padding: 15px 30px 15px 30px;
+        background: #f0f0f0;
+        /*border: 1px solid #c3c3c3;*/
+        width: 40%;
         float: left;
     }
-    .col2-set .col-2 {
-        width: 48%;
+    .col2-set .col-2 {      
+        padding: 15px 30px 15px 30px;
+        /*border: 1px solid #c3c3c3;*/
+        width: 40%;
+        background: white;
         float: right;
     }
 
@@ -547,7 +555,11 @@ INDEX
     }
 
     .checkout .col-1, .checkout .col-2 {
-        width: 40%;
+        width: 415px;
+    }
+    
+    .checkout #order_comments_field{
+        display: none;
     }
     .form-row {
         width: 48%;
@@ -592,6 +604,15 @@ INDEX
         /* Firefox, other Gecko */
         box-sizing: border-box;
         /* Opera/IE 8+ */
+    }
+    
+    .form-row select#cc-expire-year{
+        width: 70px;
+        margin-left: 5px;
+    }
+    
+    .form-row select#cc-expire-month{
+        width: 110px;
     }
     .form-row input[type=checkbox] {
         float: left;
@@ -680,8 +701,7 @@ INDEX
     .no-sidebar #main {
 
         margin: 0 auto;
-        max-width:1000px;
-        width: 100%;
+       width: 1000px;
     }
     .col-full section article header{
         display:none;
@@ -791,6 +811,7 @@ INDEX
     .footer-logo {
         background: url('../images/logo.png') no-repeat;        
         padding: 40px;
+        margin-left: 80px;
         background-size: contain;
     }
     .page-template-template-contact-php .location-twitter .col-left {
@@ -990,6 +1011,7 @@ INDEX
 
     .entry-summary #tab-description{
         min-height: 265px;
+        color: #3c3c3c;
     }
 
     .woocommerce_tabs table.shop_attributes p,
@@ -1003,6 +1025,10 @@ INDEX
     }
 
     table.cart thead{
+        background: #f0f0f0;
+    }
+    
+    table.shop_table my_account_orders thead{
         background: #f0f0f0;
     }
 
@@ -1020,6 +1046,7 @@ INDEX
     }
     table.cart td.actions {
         text-align: right;
+        padding-top: 15px;
     }
     table.cart td.actions .coupon {
         width: 50%;
@@ -1049,6 +1076,11 @@ INDEX
         width: 48%;
         font-size: .857em;
         float: left;
+    }
+    
+    .cart-collaterals .cross-sells > h2{
+        margin-bottom: 15px;
+        color: #3c3c3c;
     }
     .cart-collaterals .cart_totals {
         float: right;
@@ -1080,17 +1112,43 @@ INDEX
     
     /* 7.4 Checkout */
     .checkout #order_review {
-        padding: 1.618em;
+        /*padding: 1.618em;*/
+    }
+    
+    .checkout #order_review table.shop_table{
+        width: 475px;
+        float: left;
+    }
+    
+    .checkout #order_review table.shop_table thead{
+        background: #f0f0f0;
     }
     
     .checkout #order_review #payment{
-        width: 50%;
+        float: left;
+        width: 475px;
+        display: inline-block;
+        margin-left: 50px;
     }
+    
+    .checkout #order_review #payment .payment_methods{
+        background: #f0f0f0;
+        border: 1px solid #c3c3c3;
+        border-radius: 8px;
+        padding: 15px;
+    }
+    
     .checkout #shiptobilling {
         float: right;
         margin: 0;
         text-align: right;
         width: 48%;
+    }
+    
+    .checkout #order_review_heading{
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #CFA446;
     }
     .checkout #shiptobilling label {
         white-space: nowrap;
@@ -1174,7 +1232,7 @@ INDEX
 }
 #menu-footer-menu li a{
     color: #272625;
-    font-size: 9px;
+    font-size: 15px !important;
 }
 #menu-footer-menu li:before{
     padding-left:10px;
@@ -1374,6 +1432,19 @@ div.wdpu-msg {
     box-shadow: none !important;
 }
 
+div.wdpu-msg-inner {
+    background: #2c150c !important;
+}
+
+div.wdpu-content {
+    text-align: center;
+    background: #2c150c !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #e3e3e3;
+    padding-bottom: 5px;
+}
+
 @media only screen and (max-width: 768px) {
     #top nav ul#top-nav-right,#top nav ul#top-nav-left{
         display:none;
@@ -1391,8 +1462,20 @@ div.wdpu-msg {
     margin:0 auto;
 }
 .wdpu-msg .wdpu-close:after{
-    content:"shopping";
+    margin-top: 20px;
+    color: #CFA446 !important;
+    content: "Continue shopping";
 }
+
+.wp-video .wp-video-shortcode {
+    height: 355px !important;
+}
+
+.wp-video {
+    height: 355px !important;
+    background: #e0e0e0;
+}
+
 .wdpu-msg .wdpu-close {
     position: absolute;    
     top: 379px !important;

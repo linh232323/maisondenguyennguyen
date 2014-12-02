@@ -79,6 +79,7 @@ class WC_Checkout {
 	 * @return void
 	 */
 	public function __construct () {
+           
 		add_action( 'woocommerce_checkout_billing', array( $this,'checkout_form_billing' ) );
 		add_action( 'woocommerce_checkout_shipping', array( $this,'checkout_form_shipping' ) );
 

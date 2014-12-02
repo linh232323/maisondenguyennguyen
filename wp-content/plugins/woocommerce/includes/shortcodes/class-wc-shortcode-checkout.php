@@ -192,7 +192,13 @@ class WC_Shortcode_Checkout {
 
 		// Empty awaiting payment session
 		unset( WC()->session->order_awaiting_payment );
-
+                
+                echo '
+                <div class="payment-step">
+                <div class="step">Card view</div>
+                <div class="step ">Checkout</div>
+                <div class="step current">Confirmation</div>
+                </div>';
 		wc_get_template( 'checkout/thankyou.php', array( 'order' => $order ) );
 	}
 

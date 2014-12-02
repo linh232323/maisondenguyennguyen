@@ -1,0 +1,982 @@
+11-24-2014 @ 13:23:20 - Processing order #450
+11-24-2014 @ 13:23:20 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 196
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 450
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 196.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => New product 08
+                    [l_desc] => 
+                    [l_amt] => 98.00
+                    [l_number] => 
+                    [l_qty] => 2
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+11-24-2014 @ 13:23:26 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 102019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 196
+    [CURRENCYCODE] => USD
+    [INVNUM] => 450
+    [ITEMAMT] => 196.00
+    [L_NAME0] => New product 08
+    [L_AMT0] => 98.00
+    [L_QTY0] => 2
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+11-24-2014 @ 13:23:26 - Response: Array
+(
+    [TIMESTAMP] => 2014-11-24T13:26:22Z
+    [CORRELATIONID] => cdd1b0c2c4e0c
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [AMT] => 196.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 4WV99283ST2140201
+)
+
+11-24-2014 @ 13:30:07 - Processing order #455
+11-24-2014 @ 13:30:07 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 59
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 455
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 59.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => Model shoe 01
+                    [l_desc] => 
+                    [l_amt] => 59.00
+                    [l_number] => 
+                    [l_qty] => 1
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+11-24-2014 @ 13:30:10 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 102019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 59
+    [CURRENCYCODE] => USD
+    [INVNUM] => 455
+    [ITEMAMT] => 59.00
+    [L_NAME0] => Model shoe 01
+    [L_AMT0] => 59.00
+    [L_QTY0] => 1
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+11-24-2014 @ 13:30:10 - Response: Array
+(
+    [TIMESTAMP] => 2014-11-24T13:33:08Z
+    [CORRELATIONID] => 77e434c714b0d
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [AMT] => 59.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 0KV09563BG979850X
+)
+
+12-01-2014 @ 11:40:21 - Processing order #579
+12-01-2014 @ 11:40:21 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102016
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 87
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 579
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 87.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => New product 10
+                    [l_desc] => 
+                    [l_amt] => 87.00
+                    [l_number] => 
+                    [l_qty] => 1
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+12-01-2014 @ 11:40:23 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 6221198265942559
+    [EXPDATE] => 102016
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 87
+    [CURRENCYCODE] => USD
+    [INVNUM] => 579
+    [ITEMAMT] => 87.00
+    [L_NAME0] => New product 10
+    [L_AMT0] => 87.00
+    [L_QTY0] => 1
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+12-01-2014 @ 11:40:23 - Response: Array
+(
+    [TIMESTAMP] => 2014-12-01T11:43:24Z
+    [CORRELATIONID] => e61b8ce620da1
+    [ACK] => Failure
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [L_ERRORCODE0] => 10527
+    [L_SHORTMESSAGE0] => Invalid Data
+    [L_LONGMESSAGE0] => This transaction cannot be processed. Please enter a valid credit card number and type.
+    [L_SEVERITYCODE0] => Error
+    [AMT] => 87.00
+    [CURRENCYCODE] => USD
+)
+
+12-01-2014 @ 11:40:25 - Error Array
+(
+    [0] => Array
+        (
+            [L_ERRORCODE] => 10527
+            [L_SHORTMESSAGE] => Invalid Data
+            [L_LONGMESSAGE] => This transaction cannot be processed. Please enter a valid credit card number and type.
+            [L_SEVERITYCODE] => Error
+        )
+
+)
+
+12-01-2014 @ 11:41:31 - Processing order #579
+12-01-2014 @ 11:41:32 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 87
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 579
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 87.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => New product 10
+                    [l_desc] => 
+                    [l_amt] => 87.00
+                    [l_number] => 
+                    [l_qty] => 1
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+12-01-2014 @ 11:41:35 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 102019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 87
+    [CURRENCYCODE] => USD
+    [INVNUM] => 579
+    [ITEMAMT] => 87.00
+    [L_NAME0] => New product 10
+    [L_AMT0] => 87.00
+    [L_QTY0] => 1
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+12-01-2014 @ 11:41:35 - Response: Array
+(
+    [TIMESTAMP] => 2014-12-01T11:44:36Z
+    [CORRELATIONID] => 31a1db211f4
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [AMT] => 87.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 38142629C1903883D
+)
+
+12-01-2014 @ 13:02:07 - Processing order #580
+12-01-2014 @ 13:02:07 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 174
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 580
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 174.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => New product 10
+                    [l_desc] => 
+                    [l_amt] => 87.00
+                    [l_number] => 
+                    [l_qty] => 2
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+12-01-2014 @ 13:02:12 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 102019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 174
+    [CURRENCYCODE] => USD
+    [INVNUM] => 580
+    [ITEMAMT] => 174.00
+    [L_NAME0] => New product 10
+    [L_AMT0] => 87.00
+    [L_QTY0] => 2
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+12-01-2014 @ 13:02:12 - Response: Array
+(
+    [TIMESTAMP] => 2014-12-01T13:05:14Z
+    [CORRELATIONID] => f65df0c760965
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [AMT] => 174.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 5HA909218E058691D
+)
+
+12-01-2014 @ 13:10:19 - Processing order #581
+12-01-2014 @ 13:10:19 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 87
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 581
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 87.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => New product 10
+                    [l_desc] => 
+                    [l_amt] => 87.00
+                    [l_number] => 
+                    [l_qty] => 1
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+12-01-2014 @ 13:10:25 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 102019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 87
+    [CURRENCYCODE] => USD
+    [INVNUM] => 581
+    [ITEMAMT] => 87.00
+    [L_NAME0] => New product 10
+    [L_AMT0] => 87.00
+    [L_QTY0] => 1
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+12-01-2014 @ 13:10:25 - Response: Array
+(
+    [TIMESTAMP] => 2014-12-01T13:13:26Z
+    [CORRELATIONID] => c6428a5e70212
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [AMT] => 87.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 32M96953TX9347410
+)
+
+12-01-2014 @ 14:18:11 - Processing order #583
+12-01-2014 @ 14:18:11 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 102019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 2087
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 583
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 2087.00
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => New product 10
+                    [l_desc] => 
+                    [l_amt] => 87.00
+                    [l_number] => 
+                    [l_qty] => 1
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+            [1] => Array
+                (
+                    [l_name] => new product
+                    [l_desc] => 
+                    [l_amt] => 1000.00
+                    [l_number] => newprod
+                    [l_qty] => 2
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+12-01-2014 @ 14:18:18 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 102019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 2087
+    [CURRENCYCODE] => USD
+    [INVNUM] => 583
+    [ITEMAMT] => 2087.00
+    [L_NAME0] => New product 10
+    [L_AMT0] => 87.00
+    [L_QTY0] => 1
+    [L_NAME1] => new product
+    [L_AMT1] => 1000.00
+    [L_NUMBER1] => newprod
+    [L_QTY1] => 2
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+12-01-2014 @ 14:18:18 - Response: Array
+(
+    [TIMESTAMP] => 2014-12-01T14:21:19Z
+    [CORRELATIONID] => 7e5ff1ed171e2
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 13597118
+    [AMT] => 2087.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 8XN639881L840342J
+)
+

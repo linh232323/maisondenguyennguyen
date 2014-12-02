@@ -415,6 +415,11 @@ h2 {
     font-size: 1.618em;
     line-height: 1.387em;
 }
+h2.recent-orders{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #CFA446;
+}
 h3 {
     font-size: 1.387em;
 }
@@ -746,8 +751,7 @@ ul.nav li a {
     border-top: 0;
 }
 #footer {
-    padding: 60px 0;
-    padding-right: 80px;
+    padding: 10px 180px 80px 0;
     color: #58595b;
 }
 #footer #credit img {
@@ -1494,7 +1498,7 @@ ul.nav li a {
 }
 /* 5.2 Comments Form */
 #respond {
-    margin-bottom: 3.631em;
+    /*margin-bottom: 3.631em;*/
 }
 #respond label {
     color: #877c78;
@@ -2436,8 +2440,8 @@ ul#shipping_method {
     margin-right: 1em;
 }
 .checkout #order_review {
-    background: #f7f7f7;
-    padding: .618em;
+    /*background: #f7f7f7;*/
+    /*padding: .618em;*/
     -webkit-border-radius: 0.382em;
     border-radius: 0.382em;
     -moz-background-clip: padding;
@@ -2446,9 +2450,9 @@ ul#shipping_method {
 }
 .checkout #order_review table {
     background: #fcfcfc;
-    border: 1px solid #e8e4e3;
+    /*border: 1px solid #e8e4e3;*/
     border-bottom: 0;
-    box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.015);
+    /*box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.015);*/
     -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.015);
 }
 .checkout #order_review table tr td:first-child,
@@ -2469,18 +2473,23 @@ ul#shipping_method {
     box-shadow: 0 1px 0 0 #ffffff;
     -webkit-box-shadow: 0 1px 0 0 #ffffff;
 }
-.checkout #order_review #payment ul li label {
+.checkout #order_review #payment ul li > label {
     display: block;
     font-weight: bold;
-    height: 40px;
+    height: 30px;
     margin-bottom: 0.618em;
     padding-top: 5px;
 }
+
+
 .checkout #order_review #payment ul li label img {
     float: right;
     padding: 0;
     border: 0;
     margin-top: -5px;
+}
+.checkout #order_review #payment ul li.payment_method_paypal label img {
+    width: 50px;
 }
 .checkout #order_review #payment ul li .payment_box {
     background: #fff;
@@ -2511,7 +2520,7 @@ ul#shipping_method {
 .checkout #order_review .form-row.place-order .button {
     font-size: 1.387em;
     margin-bottom: .618em;
-    float: left;
+    float: right;
 }
 .checkout #order_review .form-row.place-order .form-row.terms {
     width: auto;
@@ -2550,6 +2559,7 @@ ul.order_details {
     list-style: none;
     padding-left: 1.618em;
     position: relative;
+    margin-bottom: 10px;
 }
 ul.order_details:after {
     content: "\0020";
@@ -2589,6 +2599,60 @@ ul.order_details:before {
     font-size: 2.244em;
     color: #84ac50;
 }
+
+.order-comfirm-success-message{
+    font-size: 13px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    color: #3c3c3c;
+}
+h2.order-details-on-confirm{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #CFA446;
+}
+
+
+table.order_details thead{
+    background: #f0f0f0;
+}
+
+table.my_account_orders thead{
+    background: #f0f0f0;
+}
+
+/* <div class="payment-step">
+                <div class="step">Card view</div>
+                <div class="step current">Checkout</div>
+                <div class="step">Confirmation</div>*/
+
+div.payment-step{
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+div.payment-step .step{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    width: 32%;
+    float:left;
+    text-transform: uppercase;
+    background: #e5e5e5;
+}
+
+div.payment-step .current{
+    color: #f0f0f0;
+    background: #3c3c3c;
+}
+
+table.order_details tr th:first-child, table.my_account_orders tr th:first-child {
+    padding-left: 10px;
+}
+
 /* 7.5 Widgets */
 .widget ul li .count {
     float: right;
@@ -2888,7 +2952,7 @@ input[type=email] {
     font-family: inherit;
     /* Make inputs use the correct typeface instead of the browser default */
     outline: none;
-    margin: 0 .327em;
+    /*margin: 0 .327em;*/
     background: #f7f7f7;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
@@ -3038,10 +3102,10 @@ button.button.checkout {
     background-image: -o-linear-gradient(top, #5e5e5e, #444444);
     /* Opera 11.10+ */
     background-image: linear-gradient(to bottom, #5e5e5e, #444444);
-    text-shadow: 0 1px 0 #333333;
+    /*text-shadow: 0 1px 0 #333333;*/
     border: 1px solid #222222;
     -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #999999, inset 0 -1px #333333;
-    box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #999999, inset 0 -1px #333333;
+    /*box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #999999, inset 0 -1px #333333;*/
 }
 a.button.alt:hover,
 a.comment-reply-link.alt:hover,
@@ -3256,7 +3320,7 @@ img.ui-datepicker-trigger {
 
 }
 
-#mega-menu-wrap-primary-menu-7 #mega-menu-primary-menu-7 li.mega-menu-item *:before {
+#mega-menu-wrap-primary-menu-7 #mega-menu-primary-menu-7 > li.mega-menu-item > *:before{
     color: silver;
     content: "/";
     font-size: 24px !important;
