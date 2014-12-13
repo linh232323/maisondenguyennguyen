@@ -262,7 +262,7 @@ jQuery( function( $ ) {
 
 		// Trigger a handler to let gateways manipulate the checkout if needed
 		if ( $form.triggerHandler( 'checkout_place_order' ) !== false && $form.triggerHandler( 'checkout_place_order_' + $( '#order_review input[name=payment_method]:checked' ).val() ) !== false ) {
-
+                        window.scrollTo(0, 0);
 			$form.addClass( 'processing' );
 
 			var form_data = $form.data();
