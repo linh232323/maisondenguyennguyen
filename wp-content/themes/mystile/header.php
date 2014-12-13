@@ -90,7 +90,7 @@ global $woo_options, $woocommerce;
 			    </a>
 		    <?php } ?>
 
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/wp-content/themes/mystile/images/Maison-de-NN-logo.png"/></a>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<h3 class="nav-toggle"><a href="#navigation"><mark class="websymbols">&#178;</mark> <span><?php _e('Navigation', 'woothemes'); ?></span></a></h3>
 
