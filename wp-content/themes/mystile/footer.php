@@ -74,11 +74,12 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 			</div>
 	
 		</footer><!-- /#footer  -->
-	
+                <div id="footer-copyright">Copyright to Nguyen Nguyen Group &copy;2014</div>
 	</div><!-- / footer-wrap -->
 
 </div><!-- /#wrapper -->
 <?php wp_footer(); ?>
 <?php woo_foot(); ?>
+
 </body>
 </html>
