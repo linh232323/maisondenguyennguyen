@@ -3333,6 +3333,35 @@ img.ui-datepicker-trigger {
     padding-right: 15px;
 }
 
+#mega-menu-wrap-primary-menu-7 #mega-menu-primary-menu-7 > li.mega-menu-item > a > span{
+    font-family: inherit;
+    width: auto;
+}
+
+/*    li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-columns-1 > ul > li > div:hover{
+    	background:#fff;
+    }*/
+    
+.mega-sub-menu > li > a > span.menu-display-text{
+    display: inline-block !important;
+    height: 30px !important;
+    padding-left: 10px !important;
+    padding-top: 5px !important;
+    width: 100% !important;
+    font-weight: normal;
+}
+
+li.mega-menu-megamenu > ul.mega-sub-menu {
+    width: 1000px !important;
+    margin-left: -62px !important;
+    font-family: "Georgia" !important;
+    min-height: 150px !important;
+}
+
+.mega-sub-menu > li > a > span.menu-display-text:hover{
+    background: #c3c3c3 !important;
+}
+
 li.cat-item.current-cat.cat-parent.parent:before {
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -3352,10 +3381,10 @@ li.cat-item.current-cat.cat-parent.parent:before {
     font-family: arial;
 }
 
-.cart > .single_add_to_cart_button{  
-    border: none !important;
+.cart > .single_add_to_cart_button{  ;
     box-shadow: none !important;
     /*background-image: url(./images/bag.png) !important;*/    
+    border: none !important
     background-color: none !important;
     -webkit-box-shadow: none !important;
     text-shadow: none !important;

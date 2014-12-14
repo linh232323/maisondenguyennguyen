@@ -980,3 +980,156 @@
     [TRANSACTIONID] => 8XN639881L840342J
 )
 
+12-13-2014 @ 05:20:33 - Processing order #622
+12-13-2014 @ 05:20:33 - Do payment request Array
+(
+    [DPFields] => Array
+        (
+            [paymentaction] => Sale
+            [ipaddress] => 127.0.0.1
+            [returnfmfdetails] => 
+        )
+
+    [CCDetails] => Array
+        (
+            [creditcardtype] => Visa
+            [acct] => ****
+            [expdate] => 062019
+            [cvv2] => ****
+            [startdate] => 
+            [issuenumber] => 
+        )
+
+    [PayerInfo] => Array
+        (
+            [email] => linh232324@gmail.com
+            [firstname] => Linh
+            [lastname] => Ho
+        )
+
+    [BillingAddress] => Array
+        (
+            [street] => 43
+            [street2] => 
+            [city] => Ho Chi Minh
+            [state] => 
+            [countrycode] => VN
+            [zip] => 
+            [phonenum] => 0908543479
+        )
+
+    [ShippingAddress] => Array
+        (
+            [shiptoname] => Linh Ho
+            [shiptostreet] => 43
+            [shiptostreet2] => 
+            [shiptocity] => Ho Chi Minh
+            [shiptostate] => 
+            [shiptozip] => 
+            [shiptocountry] => VN
+            [shiptophonenum] => 
+        )
+
+    [PaymentDetails] => Array
+        (
+            [amt] => 116.82
+            [currencycode] => USD
+            [insuranceamt] => 
+            [shipdiscamt] => 
+            [handlingamt] => 
+            [desc] => 
+            [custom] => 
+            [invnum] => 622
+            [notifyurl] => 
+            [recurring] => 
+            [itemamt] => 116.82
+        )
+
+    [OrderItems] => Array
+        (
+            [0] => Array
+                (
+                    [l_name] => Model shoe 01
+                    [l_desc] => 
+                    [l_amt] => 59.00
+                    [l_number] => 
+                    [l_qty] => 2
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+            [1] => Array
+                (
+                    [l_name] => Order Discount
+                    [l_desc] => 
+                    [l_amt] => -1.18
+                    [l_number] => khang01
+                    [l_qty] => 1
+                    [l_taxamt] => 
+                    [l_ebayitemnumber] => 
+                    [l_ebayitemauctiontxnid] => 
+                    [l_ebayitemorderid] => 
+                )
+
+        )
+
+    [Secure3D] => Array
+        (
+        )
+
+)
+
+12-13-2014 @ 05:20:40 - Request: Array
+(
+    [USER] => *****
+    [PWD] => *****
+    [VERSION] => 112.0
+    [BUTTONSOURCE] => AngellEYE_SP_WooCommerce
+    [SIGNATURE] => *****
+    [METHOD] => DoDirectPayment
+    [PAYMENTACTION] => Sale
+    [IPADDRESS] => 127.0.0.1
+    [CREDITCARDTYPE] => Visa
+    [ACCT] => 4032030540604502
+    [EXPDATE] => 062019
+    [CVV2] => 123
+    [EMAIL] => linh232324@gmail.com
+    [FIRSTNAME] => Linh
+    [LASTNAME] => Ho
+    [STREET] => 43
+    [CITY] => Ho Chi Minh
+    [COUNTRYCODE] => VN
+    [PHONENUM] => 0908543479
+    [AMT] => 116.82
+    [CURRENCYCODE] => USD
+    [INVNUM] => 622
+    [ITEMAMT] => 116.82
+    [L_NAME0] => Model shoe 01
+    [L_AMT0] => 59.00
+    [L_QTY0] => 2
+    [L_NAME1] => Order Discount
+    [L_AMT1] => -1.18
+    [L_NUMBER1] => khang01
+    [L_QTY1] => 1
+    [SHIPTONAME] => Linh Ho
+    [SHIPTOSTREET] => 43
+    [SHIPTOCITY] => Ho Chi Minh
+    [SHIPTOCOUNTRY] => VN
+)
+
+12-13-2014 @ 05:20:40 - Response: Array
+(
+    [TIMESTAMP] => 2014-12-13T05:23:44Z
+    [CORRELATIONID] => 175219c9a0706
+    [ACK] => Success
+    [VERSION] => 112.0
+    [BUILD] => 14107150
+    [AMT] => 116.82
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 14R27654R0284354E
+)
+

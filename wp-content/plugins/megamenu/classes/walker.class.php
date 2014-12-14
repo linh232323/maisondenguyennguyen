@@ -104,15 +104,16 @@ class Mega_Menu_Walker extends Walker_Nav_Menu {
 					$value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
 					$attributes .= ' ' . $attr . '="' . $value . '"';
 				}
-
 			}
 
 			$item_output = $args->before;
 			$item_output .= '<a'. $attributes .'>';
-
+                        $item_output .= '<span class="menu-display-text">';
+                        
 			/** This filter is documented in wp-includes/post-template.php */
 			$item_output .= $args->link_before . apply_filters( 'megamenu_the_title', $item->title, $item->ID ) . $args->link_after;
-
+                        
+                        $item_output .= '</span>';
 			$item_output .= '</a>';
 			$item_output .= $args->after;
 

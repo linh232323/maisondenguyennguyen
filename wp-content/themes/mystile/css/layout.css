@@ -675,7 +675,7 @@ INDEX
     #header hgroup {
         text-align:center;
         margin: 0 -3.631em;
-        padding: 0.5em 3.531em;
+        padding: 20px 3.531em 20px;
     }
     #header #navigation {
         float: right;
