@@ -1405,7 +1405,11 @@ header h1{
     left: 50%;
 }
 .related_div ul.products li.product img {
-    width: 125px;
+    width: 250px;
+}
+
+.related_div .price{
+    font-size: 13px;
 }
 .related_div ul.products li.product h3 {
     display:none;
